@@ -1,0 +1,16 @@
+h1 Application
+
+.selector
+  .blue click="toggleEI"
+    = eiValue
+  .blue click="toggleNS"
+    = nsValue
+  .blue click="toggleTF"
+    = tfValue
+  .blue click="togglePJ"
+    = pjValue
+
+= outlet
+
+br
+| Footer

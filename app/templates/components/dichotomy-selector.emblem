@@ -1,0 +1,10 @@
+.selector-outer.blue click="toggleEI"
+  = eiValue
+.selector-outer.blue click="toggleNS"
+  = nsValue
+.selector-outer.blue click="toggleTF"
+  = tfValue
+.selector-outer.blue click="togglePJ"
+  = pjValue
+  
+= activeType

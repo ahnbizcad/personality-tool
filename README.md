@@ -1,7 +1,9 @@
 # Personality-tool
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A user-friendly tool to learn and quickly reference socionics personality types.
+Learn dynamically with concrete examples, rather than with abstract explanations only.
+Plug in a chosen personality type on every explanation page.
+
 
 ## Prerequisites
 

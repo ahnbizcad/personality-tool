@@ -1,0 +1,14 @@
+h3 
+  | Personality 
+  = activeType
+
+
+= link-to 'Description' 'personality.description' 
+= link-to 'Functions' 'personality.functions'
+
+
+
+= socType
+= type
+
+= outlet
