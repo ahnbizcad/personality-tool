@@ -1,8 +1,23 @@
 h2 Personalities
 
+div click="toggleEI"
+  = eiValue
+div click="toggleNS"
+  = nsValue
+div click="toggleTF"
+  = tfValue
+div click="togglePJ"
+  = pjValue
+
 = each item in controller
   = item.type
   |  
+
+br
+br
+
+= link-to 'Description' 'personalities.description' (query-params activeType=activeType)
+= link-to 'Functions' 'personalities.functions' (query-params activeType=activeType)
 
 br
 br

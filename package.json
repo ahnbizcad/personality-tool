@@ -34,6 +34,7 @@
     "ember-export-application-global": "^1.0.2"
   },
   "dependencies": {
+    "broccoli-sass": "^0.6.3",
     "ember-cli-coffeescript": "^0.10.0",
     "ember-cli-emblem-hbs-printer": "^0.2.1"
   }
