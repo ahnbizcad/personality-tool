@@ -8,7 +8,7 @@ FunctionsRoute = Ember.Route.extend
 
   model: (params) ->
     alert('functions model')
-    this.store.findQuery('personality', { type: params.activeType }).then (array) ->
+    this.store.find('personality', { type: params.activeType }).then (array) ->
       array.get('firstObject')
 
 

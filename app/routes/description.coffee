@@ -17,8 +17,7 @@ DescriptionRoute = Ember.Route.extend
     #? Should I find here, findQuery here, or take a subset of modelFor('personalities')?
 
 
-
-    this.store.findQuery('personality', params.activeType).then (array) ->
+    this.store.find('personality', params.activeType).then (array) ->
       array.get('firstObject')
     
     #this.store.findQuery('personality', { type: params.activeType }).then (array) ->
