@@ -5,6 +5,12 @@ Learn dynamically with concrete examples, rather than with abstract explanations
 Plug in a chosen personality type on every explanation page.
 
 
+## Issues, In-progress
+
+* settings and configuration for heroku hosting
+* set model on nested route, when model is already set & using link-to or transitionToRoute.
+* each link handles query params individually, or should they reference the parent-most route's property determined by query params?
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.

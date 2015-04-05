@@ -1,12 +1,14 @@
 `import Ember from 'ember'`
 
 PersonalitiesRoute = Ember.Route.extend
-  queryParams:
-    activeType:
-      refreshModel: true
-      replace: true
 
   model: ->
     this.store.find('personality')
+
+  queryParams:
+    activeType:
+      replace: true
+      refreshModel: true
+
 
 `export default PersonalitiesRoute`

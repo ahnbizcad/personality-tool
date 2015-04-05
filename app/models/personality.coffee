@@ -4,6 +4,7 @@ Personality = DS.Model.extend
   type:         DS.attr('string')
   socType:      DS.attr('string')
   description:  DS.attr('string')
+  functions:    DS.attr('string')
 
 Personality.reopenClass
   FIXTURES: [

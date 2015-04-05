@@ -6,7 +6,7 @@ DichotomySelectorComponent = Ember.Component.extend
   tfValue: 't'
   pjValue: 'p'
 
-  type: (->
+  activeType: (->
     newValue = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
     this.set('controller.type', newValue)
   ).property('eiValue', 'nsValue', 'tfValue', 'pjValue')
@@ -39,5 +39,6 @@ DichotomySelectorComponent = Ember.Component.extend
         this.set('pjValue', 'j')
       else if pjValue == 'j'
         this.set('pjValue', 'p')
+
 
 `export default DichotomySelectorComponent`
