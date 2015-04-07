@@ -16,8 +16,8 @@ div click="togglePJ"
 br
 br
 
-= link-to 'Description' 'personalities.description' (query-params activeType=activeType)
-= link-to 'Functions' 'personalities.functions' (query-params activeType=activeType)
+= link-to 'Description' 'personalities.description'
+= link-to 'Functions' 'personalities.functions'
 
 br
 br

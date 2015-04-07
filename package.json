@@ -38,6 +38,7 @@
   "dependencies": {
     "bower": "^1.4.1",
     "broccoli-sass": "^0.6.3",
+    "ember-cli": "^0.2.2",
     "ember-cli-coffeescript": "^0.10.0",
     "ember-cli-emblem-hbs-printer": "^0.2.1"
   }

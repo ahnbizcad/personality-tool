@@ -3,7 +3,7 @@
 PersonalitiesController = Ember.ArrayController.extend
 
   queryParams: ['activeType']
-  activeType: 'entp'  
+  activeType: 'entp'
 
   eiValue: (->
     this.get('activeType').charAt(0)

@@ -13,7 +13,7 @@ PersonalitiesDescriptionRoute = Ember.Route.extend
 #? If setting in both places is necessary, how to not have to initialize non-DRY values?
 #A Define query params only in one place. Then the models of all children get refreshed.
 
-#? This always hits the server
+#| findQuerya  always hits the server
 #this.store.find('personality', { type: this.get('personalitiesParams').activeType }).then (array) ->
 #  array.get('firstObject')
 
@@ -23,12 +23,9 @@ PersonalitiesDescriptionRoute = Ember.Route.extend
 #? Then does a model itself have to be passed into the link, or just the identifier (like ID)?
 #? Does the serialize method make it so that you can pass something other than ID in, 
 #? and have the model constructed from that bit of info?
-
-#? Is ['activeType'] redundant if the following syntax is used?
-#A no. it goes in the controller, while route has the queryParams: foo: resfreshModel: true options
   
 #? does the query params key need to be set as a method here, or just once in the most upstream route? (e.g. application)
-# Once. It applies to ALL descendants
+#A Once. It applies to ALL descendants
 
 
 `export default PersonalitiesDescriptionRoute`
