@@ -1,6 +1,6 @@
 `import Ember from 'ember'`
 
-PersonalitiesDescriptionController = Ember.ObjectController.extend()
+PersonalitiesDescriptionController = Ember.Controller.extend()
 
 
 `export default PersonalitiesDescriptionController`

@@ -12,7 +12,7 @@ DS.FixtureAdapter.reopen
           return false
       true
 
-ApplicationAdapter = DS.ActiveModelAdapter.extend
-  host: 'https://api.personality-tool.com'
+ApplicationAdapter = DS.ActiveModelAdapter.extend()
+#host: 'https://api.personality-tool.com'
 
 `export default ApplicationAdapter`

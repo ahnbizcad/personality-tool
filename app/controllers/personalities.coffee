@@ -1,6 +1,6 @@
 `import Ember from 'ember'`
 
-PersonalitiesController = Ember.ArrayController.extend
+PersonalitiesController = Ember.Controller.extend
 
   queryParams: ['activeType']
   activeType: 'entp'

@@ -9,17 +9,21 @@ div click="toggleTF"
 div click="togglePJ"
   = pjValue
 
-= each item in controller
-  = item.type
-  |  
+/= each item in model
+/  = item.type
+/  |  
 
 br
 br
 
-= link-to 'Description' 'personalities.description'
+= link-to 'Profile' 'personalities.profile'
 = link-to 'Functions' 'personalities.functions'
+= link-to 'Description' 'personalities.description'
+/= link-to 'Intertype Relations' 'personalities.compare'
+
 
 br
 br
+
 
 = outlet

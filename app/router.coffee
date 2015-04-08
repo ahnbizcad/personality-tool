@@ -6,8 +6,10 @@ Router = Ember.Router.extend
 
 Router.map ->
   @resource 'personalities', { path: '/' }, ->
+    @route 'profile'
     @route 'description'
     @route 'functions'
+    
 
 
 `export default Router`

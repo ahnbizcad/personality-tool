@@ -1,7 +1,7 @@
 h4 Description
 
-= description
+= model.description
 
-= socType
+= model.socType
 
 = outlet

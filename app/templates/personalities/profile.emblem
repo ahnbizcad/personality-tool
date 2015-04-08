@@ -1,0 +1,17 @@
+h4 
+  = model.type 
+  = model.socType
+
+| Quadra: 
+= model.quadra
+
+| Club: 
+= model.club
+
+| Temperament: 
+= model.temperament
+
+| Romance style: 
+= model.romanceStyle
+
+= outlet

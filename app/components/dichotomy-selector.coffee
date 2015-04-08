@@ -13,6 +13,7 @@ DichotomySelectorComponent = Ember.Component.extend
 
   actions: 
     toggleEI: ->
+    
       eiValue = this.get('eiValue')
       if eiValue == 'e'
         this.set('eiValue', 'i')
