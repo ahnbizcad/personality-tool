@@ -3,7 +3,7 @@
 PersonalitiesController = Ember.Controller.extend
 
   queryParams: ['activeType']
-  activeType: null
+  activeType: 'entp'
 
   isSpecific: false
 
@@ -32,7 +32,6 @@ PersonalitiesController = Ember.Controller.extend
     this.get('activeType').charAt(3)
   ).property()
 
-
   activeTypeChanged: ( ->
     #? Is having something outside bad? What's the point of allowing argument passing for a function specified ni run once then?
     #. My use case happens to be OK with being outside run once, but not good practice.
@@ -45,7 +44,7 @@ PersonalitiesController = Ember.Controller.extend
 
   actions:
     toggleSpecific: ->
-      isTheory = this.get('isSpecific')
+      isSpecific = this.get('isSpecific')
 
       if isSpecific == false
         this.set('isSpecific', true)

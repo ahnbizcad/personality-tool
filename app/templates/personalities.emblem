@@ -1,26 +1,15 @@
 h2 Personalities
 
-div click="toggleSpecific"
-  | On
+div class=isSpecific:general:specific click="toggleSpecific"
+  | div
 div click="toggleEI"
-  = eiValue
+  = eiValueFiltered
 div click="toggleNS"
-  = nsValue
+  = nsValueFiltered
 div click="toggleTF"
-  = tfValue
+  = tfValueFiltered
 div click="togglePJ"
   = pjValue
-
-div
-  div click="toggleEI"
-    = eiValueFiltered
-  div click="toggleNS"
-    = nsValueFiltered
-  div click="toggleTF"
-    = tfValueFiltered
-  div click="togglePJ"
-    = pjValue
->>>>>>> master
 
 br
 br
