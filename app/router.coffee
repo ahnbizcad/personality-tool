@@ -8,8 +8,9 @@ Router.map ->
   @resource 'personalities', { path: '/' }, ->
     @route 'profile'
     @route 'description'
-    @route 'functions'
-    
+    @route 'information-elements'
 
+    
+  @route 'personalities/informationElements'
 
 `export default Router`

@@ -1,17 +1,17 @@
-h4 
-  = model.type 
+h4
   = model.socType
 
-| Quadra: 
-= model.quadra
-
-| Club: 
-= model.club
-
-| Temperament: 
-= model.temperament
-
-| Romance style: 
-= model.romanceStyle
+div
+  | Quadra: 
+  = model.quadra
+div
+  | Club: 
+  = model.club
+div
+  | Temperament: 
+  = model.temperament
+div
+  | Romance style: 
+  = model.romanceStyle
 
 = outlet

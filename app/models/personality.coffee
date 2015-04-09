@@ -1,14 +1,14 @@
 `import DS from 'ember-data'`
 
 Personality = DS.Model.extend
-  type:         DS.attr('string')
-  socType:      DS.attr('string')
-  quadra:       DS.attr('string')
-  club:         DS.attr('string')
-  temperament:  DS.attr('string')
-  romanceStyle: DS.attr('string')
-  functions:    DS.attr('string')
-  description:  DS.attr('string')
+  type:                 DS.attr('string')
+  socType:              DS.attr('string')
+  quadra:               DS.attr('string')
+  club:                 DS.attr('string')
+  temperament:          DS.attr('string')
+  romanceStyle:         DS.attr('string')
+  informationElements:  DS.attr()
+  description:          DS.attr('string')
 
 Personality.reopenClass
   FIXTURES: [
@@ -18,9 +18,9 @@ Personality.reopenClass
       socType: 'NLE',
       quadra: 'alpha',
       club: 'researchers',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'a',
+      temperament: 'flexible-maneurvering',
+      romanceStyle: 'infantile',
+      informationElements: ['Ne','Ti','Se','Fi','Si','Fe','Ni','Te',],
       description: 'stuff',
     }
     { 
@@ -28,10 +28,10 @@ Personality.reopenClass
       type: 'isfp',
       socType: 'SFI',
       quadra: 'alpha',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'b',
+      club: 'socials',
+      temperament: 'receptive-adaptive',
+      romanceStyle: 'caregiver',
+      informationElements: ['Si','Fe','Ni','Te','Ne','Ti','Se','Fi',],
       description: 'stuff',
     }
     { 
@@ -39,10 +39,10 @@ Personality.reopenClass
       type: 'esfj',
       socType: 'ESE',
       quadra: 'alpha',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'c',
+      club: 'socials',
+      temperament: 'linear-assertive',
+      romanceStyle: 'caregiver',
+      informationElements: ['Fe','Si','Te','Ni','Ti','Ne','Fi','Se',],
       description: 'stuff',
     }
     { 
@@ -51,9 +51,9 @@ Personality.reopenClass
       socType: 'LII',
       quadra: 'alpha',
       club: 'researchers',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'd',
+      temperament: 'balanced-stable',
+      romanceStyle: 'infantile',
+      informationElements: ['Ti','Ne','Fi','Se','Fe','Si','Te','Ni',],
       description: 'stuff',
     }
     { 
@@ -61,10 +61,10 @@ Personality.reopenClass
       type: 'enfj',
       socType: 'EIE',
       quadra: 'beta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'e',
+      club: 'humanitarians',
+      temperament: 'linear-assertive',
+      romanceStyle: 'victim',
+      informationElements: ['Fe','Ni','Te','Si','Ti','Se','Fi','Ne',],
       description: 'stuff',
     }
     { 
@@ -72,10 +72,10 @@ Personality.reopenClass
       type: 'istj',
       socType: 'LSI',
       quadra: 'beta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'f',
+      club: 'pragmatists',
+      temperament: 'balanced-stable',
+      romanceStyle: 'aggressor',
+      informationElements: ['Ti','Se','Fi','Ne','Fe','Ni','Te','Si',],
       description: 'stuff',
     }
     { 
@@ -83,10 +83,10 @@ Personality.reopenClass
       type: 'estp',
       socType: 'SLE',
       quadra: 'beta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'g',
+      club: 'pragmatists',
+      temperament: 'flexible-maneurvering',
+      romanceStyle: 'aggressor',
+      informationElements: ['Se','Ti','Ne','Fi','Ni','Fe','Si','Te',],
       description: 'stuff',
     }
     { 
@@ -94,10 +94,10 @@ Personality.reopenClass
       type: 'infp',
       socType: 'IEI',
       quadra: 'beta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'h',
+      club: 'humanitarians',
+      temperament: 'receptive-adaptive',
+      romanceStyle: 'victim',
+      informationElements: ['Ni','Fe','Si','Te','Se','Ti','Ne','Fi',],
       description: 'stuff',
     }
     { 
@@ -105,10 +105,10 @@ Personality.reopenClass
       type: 'esfp',
       socType: 'SEE',
       quadra: 'gamma',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'i',
+      club: 'socials',
+      temperament: 'flexible-maneurvering',
+      romanceStyle: 'aggressor',
+      informationElements: ['Se','Fi','Ne','Ti','Ni','Te','Si','Fe',],
       description: 'stuff',
     }
     { 
@@ -117,9 +117,9 @@ Personality.reopenClass
       socType: 'ILI',
       quadra: 'gamma',
       club: 'researchers',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'j',
+      temperament: 'receptive-adaptive',
+      romanceStyle: 'victim',
+      informationElements: ['Ni','Te','Si','Fe','Se','Fi','Ne','Ti'],
       description: 'stuff',
     }
     { 
@@ -128,9 +128,9 @@ Personality.reopenClass
       socType: 'LIE',
       quadra: 'gamma',
       club: 'researchers',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'k',
+      temperament: 'linear-assertive',
+      romanceStyle: 'victim',
+      informationElements: ['Te','Ni','Fe','Si','Fi','Se','Ti','Ne',]
       description: 'stuff',
     }
     { 
@@ -138,10 +138,10 @@ Personality.reopenClass
       type: 'isfj',
       socType: 'ESI',
       quadra: 'gamma',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'l',
+      club: 'socials',
+      temperament: 'balanced-stable',
+      romanceStyle: 'aggressor',
+      informationElements: ['Fi','Se','Ti','Ne','Te','Ni','Fe','Si',]
       description: 'stuff',
     }
     { 
@@ -149,10 +149,10 @@ Personality.reopenClass
       type: 'estj',
       socType: 'LSE',
       quadra: 'delta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'm',
+      club: 'pragmatists',
+      temperament: 'linear-assertive',
+      romanceStyle: 'caregiver',
+      informationElements: ['Te','Si','Fe','Ni','Fi','Ne','Ti','Se',]
       description: 'stuff',
     }
     { 
@@ -160,10 +160,10 @@ Personality.reopenClass
       type: 'infj',
       socType: 'FII',
       quadra: 'delta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'n',
+      club: 'humanitarians',
+      temperament: 'balanced-stable',
+      romanceStyle: 'infantile',
+      informationElements: ['Fi','Ne','Ti','Se','Te','Si','Fe','Ni',]
       description: 'stuff',
     }
     { 
@@ -171,10 +171,10 @@ Personality.reopenClass
       type: 'enfp',
       socType: 'NEE',
       quadra: 'delta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'o',
+      club: 'humanitarians',
+      temperament: 'flexible-maneurvering',
+      romanceStyle: 'infantile',
+      informationElements: ['Ne','Fi','Se','Ti','Si','Te','Ni','Fe',]
       description: 'stuff',
     }
     { 
@@ -182,10 +182,10 @@ Personality.reopenClass
       type: 'istp',
       socType: 'SLI',
       quadra: 'delta',
-      club: '',
-      temperament: '',
-      romanceStyle: '',
-      functions: 'p',
+      club: 'pragmatists',
+      temperament: 'receptive-adaptive',
+      romanceStyle: 'caregiver',
+      informationElements: ['Si','Te','Ni','Fe','Ne','Fi','Se','Ti',]
       description: 'stuff',
     }
   ]

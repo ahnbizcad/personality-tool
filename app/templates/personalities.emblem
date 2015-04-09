@@ -1,25 +1,22 @@
 h2 Personalities
 
-div click="toggleEI"
-  = eiValue
-div click="toggleNS"
-  = nsValue
-div click="toggleTF"
-  = tfValue
-div click="togglePJ"
-  = pjValue
-
-/= each item in model
-/  = item.type
-/  |  
+div
+  div click="toggleEI"
+    = eiValueFiltered
+  div click="toggleNS"
+    = nsValueFiltered
+  div click="toggleTF"
+    = tfValueFiltered
+  div click="togglePJ"
+    = pjValue
 
 br
 br
 
-= link-to 'Profile' 'personalities.profile'
-= link-to 'Functions' 'personalities.functions'
-= link-to 'Description' 'personalities.description'
-/= link-to 'Intertype Relations' 'personalities.compare'
+link-to 'personalities.profile' | Profile 
+link-to 'personalities.description' | Description 
+link-to 'personalities.information-elements' | Information Elements 
+/link-to 'personalities.intertype-relations' | Intertype Relations
 
 
 br
