@@ -1,0 +1,7 @@
+h4 Information Elements
+
+= each ie in model.informationElements
+  div
+    = ie
+
+= outlet

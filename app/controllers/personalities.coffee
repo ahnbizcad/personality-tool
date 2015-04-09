@@ -3,7 +3,9 @@
 PersonalitiesController = Ember.Controller.extend
 
   queryParams: ['activeType']
-  activeType: 'entp'
+  activeType: null
+
+  isSpecific: false
 
   eiValue: (->
     this.get('activeType').charAt(0)
@@ -29,7 +31,15 @@ PersonalitiesController = Ember.Controller.extend
   changeActiveTypeQueryParameter: (activeType) ->
     this.transitionToRoute({ queryParams: { activeType: activeType } })
 
-  actions: 
+  actions:
+    toggleSpecific: ->
+      isTheory = this.get('isSpecific')
+
+      if isSpecific == false
+        this.set('isSpecific', true)
+      else if isSpecific == true
+        this.set('isSpecific', false)
+
     toggleEI: ->
       eiValue = this.get('eiValue')
 

@@ -1,5 +1,7 @@
 h2 Personalities
 
+div click="toggleSpecific"
+  | On
 div click="toggleEI"
   = eiValue
 div click="toggleNS"
