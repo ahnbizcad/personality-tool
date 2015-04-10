@@ -1,8 +1,12 @@
-.selector-outer.blue click="toggleEI"
-  = eiValue
-.selector-outer.blue click="toggleNS"
-  = nsValue
-.selector-outer.blue click="toggleTF"
-  = tfValue
-.selector-outer.blue click="togglePJ"
+div class=isSpecific:selected:not-selected click="toggleSpecific"
+  | div
+  = isSpecific
+
+div click="toggleEI"
+  = eiValueFiltered
+div click="toggleNS"
+  = nsValueFiltered
+div click="toggleTF"
+  = tfValueFiltered
+div click="togglePJ"
   = pjValue
