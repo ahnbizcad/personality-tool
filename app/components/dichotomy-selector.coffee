@@ -2,7 +2,9 @@
 
 DichotomySelectorComponent = Ember.Component.extend
 
-  classNameBindings: ['isSelected:selected:not-selected']
+  classNameBindings: ['isSpecific:selected:not-selected']
+
+  
 
   eiValue: (->
     this.get('activeType').charAt(0)
@@ -37,7 +39,6 @@ DichotomySelectorComponent = Ember.Component.extend
     newActiveType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
     this.set('activeType', newActiveType)
   )
-
 
   actions:
     toggleSpecific: ->

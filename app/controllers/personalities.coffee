@@ -6,13 +6,6 @@ PersonalitiesController = Ember.Controller.extend
   activeType: 'entp'
   isSelected: false
 
-  activeTypeChanged: ( ->
-    Ember.run.once(this, 'updateActiveTypeQueryParameter')
-  ).observes('activeType')
-
-  udpateActiveTypeQueryParameter: (activeType) ->
-    this.transitionToRoute({ queryParams: { activeType: this.get('activeType') } })
-
   actions:
     toggleSpecific: ->
       isSelected = this.get('isSelected')
