@@ -1,5 +1,5 @@
 `import Ember from 'ember'`
-
+  
 PersonalitiesInformationElementsRoute = Ember.Route.extend
 
   model: (params)->

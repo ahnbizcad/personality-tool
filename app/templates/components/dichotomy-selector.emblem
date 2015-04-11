@@ -1,12 +1,12 @@
-div class=isSpecific:selected:not-selected click="toggleSpecific"
-  | div
+div class=isSpecific:specific:not-specific click="toggleSpecific"
   = isSpecific
 
-div click="toggleEI"
-  = eiValueFiltered
-div click="toggleNS"
-  = nsValueFiltered
-div click="toggleTF"
-  = tfValueFiltered
-div click="togglePJ"
-  = pjValue
+div click="enableSpecific"
+  div click="toggleEI"
+    = eiValueFiltered
+  div click="toggleNS"
+    = nsValueFiltered
+  div click="toggleTF"
+    = tfValueFiltered
+  div click="togglePJ"
+    = pjValue

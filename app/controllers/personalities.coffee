@@ -4,16 +4,9 @@ PersonalitiesController = Ember.Controller.extend
 
   queryParams: ['activeType', 'isSelected']
   activeType: 'entp'
-  isSelected: false
+  isSpecific: false
 
   actions:
-    toggleSpecific: ->
-      isSelected = this.get('isSelected')
-
-      if isSelected == false
-        this.set('isSelected', true)
-      else if isSelected == true
-        this.set('isSelected', false)
 
     toggleEI: ->
       eiValue = this.get('eiValue')
