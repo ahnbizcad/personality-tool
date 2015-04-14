@@ -2,4 +2,5 @@
 
 PersonalitiesInformationElementsController = Ember.Controller.extend()
 
+
 `export default PersonalitiesInformationElementsController`

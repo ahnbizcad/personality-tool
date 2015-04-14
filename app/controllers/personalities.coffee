@@ -2,9 +2,14 @@
 
 PersonalitiesController = Ember.Controller.extend
 
-  queryParams: ['activeType', 'isSelected']
+  queryParams: [
+    'activeType'
+    isTheory:
+      as: "theory"
+  ]
   activeType: 'entp'
-  isSpecific: false
+  isTheory: false
+
 
   actions:
 

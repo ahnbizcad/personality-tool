@@ -1,12 +1,8 @@
-div class=isSpecific:specific:not-specific click="toggleSpecific"
-  = isSpecific
-
-div click="enableSpecific"
-  div click="toggleEI"
-    = eiValueFiltered
-  div click="toggleNS"
-    = nsValueFiltered
-  div click="toggleTF"
-    = tfValueFiltered
-  div click="togglePJ"
-    = pjValue
+.dichotomy-button click="toggleEI"
+  = eiValueFiltered
+.dichotomy-button click="toggleNS"
+  = nsValueFiltered
+.dichotomy-button click="toggleTF"
+  = tfValueFiltered
+.dichotomy-button click="togglePJ"
+  = pjValue
