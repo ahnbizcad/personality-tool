@@ -45,4 +45,5 @@ PersonalitiesController = Ember.Controller.extend
       else if pjValue == 'j'
         this.set('pjValue', 'p')
 
+
 `export default PersonalitiesController`

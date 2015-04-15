@@ -1,7 +1,9 @@
 h2 Personalities
 
 theory-button isTheory=isTheory
-dichotomy-selector currentType=activeType
+
+= if activeType
+  dichotomy-selector currentType=activeType
 
 br
 br

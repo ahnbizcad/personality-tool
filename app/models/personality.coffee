@@ -7,7 +7,14 @@ Personality = DS.Model.extend
   club:                 DS.attr('string')
   temperament:          DS.attr('string')
   romanceStyle:         DS.attr('string')
-  informationElements:  DS.attr()
+  function1:            DS.attr('string')
+  function2:            DS.attr('string')
+  function3:            DS.attr('string')
+  function4:            DS.attr('string')
+  function5:            DS.attr('string')
+  function6:            DS.attr('string')
+  function7:            DS.attr('string')
+  function8:            DS.attr('string')
   description:          DS.attr('string')
 
 Personality.reopenClass
@@ -20,7 +27,14 @@ Personality.reopenClass
       club: 'researchers',
       temperament: 'flexible-maneurvering',
       romanceStyle: 'infantile',
-      informationElements: ['Ne','Ti','Se','Fi','Si','Fe','Ni','Te',],
+      function1: 'Ne',
+      function2: 'Ti',
+      function3: 'Se',
+      function4: 'Fi',
+      function5: 'Si',
+      function6: 'Fe',
+      function7: 'Ni',
+      function8: 'Te',
       description: 'stuff',
     }
     { 
@@ -31,7 +45,14 @@ Personality.reopenClass
       club: 'socials',
       temperament: 'receptive-adaptive',
       romanceStyle: 'caregiver',
-      informationElements: ['Si','Fe','Ni','Te','Ne','Ti','Se','Fi',],
+      function1: 'Si',
+      function2: 'Fe',
+      function3: 'Ni',
+      function4: 'Te',
+      function5: 'Ne',
+      function6: 'Ti',
+      function7: 'Se',
+      function8: 'Fi',
       description: 'stuff',
     }
     { 
@@ -42,7 +63,14 @@ Personality.reopenClass
       club: 'socials',
       temperament: 'linear-assertive',
       romanceStyle: 'caregiver',
-      informationElements: ['Fe','Si','Te','Ni','Ti','Ne','Fi','Se',],
+      function1: 'Fe',
+      function2: 'Si',
+      function3: 'Te',
+      function4: 'Ni',
+      function5: 'Ti',
+      function6: 'Ne',
+      function7: 'Fi',
+      function8: 'Se',
       description: 'stuff',
     }
     { 
@@ -53,7 +81,14 @@ Personality.reopenClass
       club: 'researchers',
       temperament: 'balanced-stable',
       romanceStyle: 'infantile',
-      informationElements: ['Ti','Ne','Fi','Se','Fe','Si','Te','Ni',],
+      function1: 'Ti',
+      function2: 'Ne',
+      function3: 'Fi',
+      function4: 'Se',
+      function5: 'Fe',
+      function6: 'Si',
+      function7: 'Te',
+      function8: 'Ni',
       description: 'stuff',
     }
     { 
@@ -64,7 +99,14 @@ Personality.reopenClass
       club: 'humanitarians',
       temperament: 'linear-assertive',
       romanceStyle: 'victim',
-      informationElements: ['Fe','Ni','Te','Si','Ti','Se','Fi','Ne',],
+      function1: 'Fe',
+      function2: 'Ni',
+      function3: 'Te',
+      function4: 'Si',
+      function5: 'Ti',
+      function6: 'Se',
+      function7: 'Fi',
+      function8: 'Ne',
       description: 'stuff',
     }
     { 
@@ -75,7 +117,14 @@ Personality.reopenClass
       club: 'pragmatists',
       temperament: 'balanced-stable',
       romanceStyle: 'aggressor',
-      informationElements: ['Ti','Se','Fi','Ne','Fe','Ni','Te','Si',],
+      function1: 'Ti',
+      function2: 'Se',
+      function3: 'Fi',
+      function4: 'Ne',
+      function5: 'Fe',
+      function6: 'Ni',
+      function7: 'Te',
+      function8: 'Si',
       description: 'stuff',
     }
     { 
@@ -86,7 +135,14 @@ Personality.reopenClass
       club: 'pragmatists',
       temperament: 'flexible-maneurvering',
       romanceStyle: 'aggressor',
-      informationElements: ['Se','Ti','Ne','Fi','Ni','Fe','Si','Te',],
+      function1: 'Se',
+      function2: 'Ti',
+      function3: 'Ne',
+      function4: 'Fi',
+      function5: 'Ni',
+      function6: 'Fe',
+      function7: 'Si',
+      function8: 'Te',
       description: 'stuff',
     }
     { 
@@ -97,7 +153,14 @@ Personality.reopenClass
       club: 'humanitarians',
       temperament: 'receptive-adaptive',
       romanceStyle: 'victim',
-      informationElements: ['Ni','Fe','Si','Te','Se','Ti','Ne','Fi',],
+      function1: 'Ni',
+      function2: 'Fe',
+      function3: 'Si',
+      function4: 'Te',
+      function5: 'Se',
+      function6: 'Ti',
+      function7: 'Ne',
+      function8: 'Fi',
       description: 'stuff',
     }
     { 
@@ -108,7 +171,14 @@ Personality.reopenClass
       club: 'socials',
       temperament: 'flexible-maneurvering',
       romanceStyle: 'aggressor',
-      informationElements: ['Se','Fi','Ne','Ti','Ni','Te','Si','Fe',],
+      function1: 'Se',
+      function2: 'Fi',
+      function3: 'Ne',
+      function4: 'Ti',
+      function5: 'Ni',
+      function6: 'Te',
+      function7: 'Si',
+      function8: 'Fe',
       description: 'stuff',
     }
     { 
@@ -119,7 +189,14 @@ Personality.reopenClass
       club: 'researchers',
       temperament: 'receptive-adaptive',
       romanceStyle: 'victim',
-      informationElements: ['Ni','Te','Si','Fe','Se','Fi','Ne','Ti'],
+      function1: 'Ni',
+      function2: 'Te',
+      function3: 'Si',
+      function4: 'Fe',
+      function5: 'Se',
+      function6: 'Fi',
+      function7: 'Ne',
+      function8: 'Ti',
       description: 'stuff',
     }
     { 
@@ -130,7 +207,14 @@ Personality.reopenClass
       club: 'researchers',
       temperament: 'linear-assertive',
       romanceStyle: 'victim',
-      informationElements: ['Te','Ni','Fe','Si','Fi','Se','Ti','Ne',]
+      function1: 'Te',
+      function2: 'Ni',
+      function3: 'Fe',
+      function4: 'Si',
+      function5: 'Fi',
+      function6: 'Se',
+      function7: 'Ti',
+      function8: 'Ne',
       description: 'stuff',
     }
     { 
@@ -141,7 +225,14 @@ Personality.reopenClass
       club: 'socials',
       temperament: 'balanced-stable',
       romanceStyle: 'aggressor',
-      informationElements: ['Fi','Se','Ti','Ne','Te','Ni','Fe','Si',]
+      function1: 'Fi',
+      function2: 'Se',
+      function3: 'Ti',
+      function4: 'Ne',
+      function5: 'Te',
+      function6: 'Ni',
+      function7: 'Fe',
+      function8: 'Si',
       description: 'stuff',
     }
     { 
@@ -152,7 +243,14 @@ Personality.reopenClass
       club: 'pragmatists',
       temperament: 'linear-assertive',
       romanceStyle: 'caregiver',
-      informationElements: ['Te','Si','Fe','Ni','Fi','Ne','Ti','Se',]
+      function1: 'Te',
+      function2: 'Si',
+      function3: 'Fe',
+      function4: 'Ni',
+      function5: 'Fi',
+      function6: 'Ne',
+      function7: 'Ti',
+      function8: 'Se',
       description: 'stuff',
     }
     { 
@@ -163,7 +261,14 @@ Personality.reopenClass
       club: 'humanitarians',
       temperament: 'balanced-stable',
       romanceStyle: 'infantile',
-      informationElements: ['Fi','Ne','Ti','Se','Te','Si','Fe','Ni',]
+      function1: 'Fi',
+      function2: 'Ne',
+      function3: 'Ti',
+      function4: 'Se',
+      function5: 'Te',
+      function6: 'Si',
+      function7: 'Fe',
+      function8: 'Ni',
       description: 'stuff',
     }
     { 
@@ -174,7 +279,14 @@ Personality.reopenClass
       club: 'humanitarians',
       temperament: 'flexible-maneurvering',
       romanceStyle: 'infantile',
-      informationElements: ['Ne','Fi','Se','Ti','Si','Te','Ni','Fe',]
+      function1: 'Ne',
+      function2: 'Fi',
+      function3: 'Se',
+      function4: 'Ti',
+      function5: 'Si',
+      function6: 'Te',
+      function7: 'Ni',
+      function8: 'Fe',
       description: 'stuff',
     }
     { 
@@ -185,7 +297,14 @@ Personality.reopenClass
       club: 'pragmatists',
       temperament: 'receptive-adaptive',
       romanceStyle: 'caregiver',
-      informationElements: ['Si','Te','Ni','Fe','Ne','Fi','Se','Ti',]
+      function1: 'Si',
+      function2: 'Te',
+      function3: 'Ni',
+      function4: 'Fe',
+      function5: 'Ne',
+      function6: 'Fi',
+      function7: 'Se',
+      function8: 'Ti',
       description: 'stuff',
     }
   ]

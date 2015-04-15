@@ -1,7 +1,6 @@
 h3 Information Elements
 
-= each ie in model.informationElements
-  div
-    = ie
+function-ordering currentPersonality=model
+
 
 = outlet

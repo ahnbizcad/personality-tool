@@ -12,10 +12,11 @@ PersonalitiesRoute = Ember.Route.extend
 
 
   ## For showing default query param value in URL
-  #resetController: (controller)->
+  #resetController: (controller, isExiting, transition)->  
   #  controller.set('activeType', 'entp')
   #  this._super.apply(this, arguments)
-
+  
+  
   model: ->
     this.store.find('personality')
 

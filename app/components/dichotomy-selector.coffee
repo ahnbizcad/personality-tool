@@ -1,7 +1,7 @@
 `import Ember from 'ember'`
 
 DichotomySelectorComponent = Ember.Component.extend
-  #. properties
+  #. PROPERTIES
   # currentType
 
 
