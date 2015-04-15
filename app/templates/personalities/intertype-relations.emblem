@@ -1,9 +1,9 @@
 h3 Intertype Relations
 
 = activeType
-function-ordering currentPersonality=model
+function-ordering currentPersonality=model.modelActive
 
 dichotomy-selector currentType=otherType
-function-ordering currentPersonality=otherPersonality
+function-ordering currentPersonality=model.modelOther
 
 = outlet

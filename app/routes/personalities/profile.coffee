@@ -2,7 +2,7 @@
 
 PersonalitiesProfileRoute = Ember.Route.extend
 
-  model: (params)->
+  model: (params) ->
     this.modelFor('personalities').findBy('type', this.paramsFor('personalities').activeType)
 
 

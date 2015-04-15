@@ -8,8 +8,10 @@ PersonalitiesIntertypeRelationsRoute = Ember.Route.extend
       replace: true
 
   
-  model: (params)->
-    this.modelFor('personalities').findBy('type', this.paramsFor('personalities').activeType)
+  model: (params) ->
+    Ember.RSVP.hash
+      modelActive: this.modelFor('personalities').findBy('type', this.paramsFor('personalities').activeType)
+      modelOther:  this.modelFor('personalities').findBy('type', params.otherType)
 
 
   #afterModel: (resolvedModel, transition) ->

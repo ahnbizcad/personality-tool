@@ -9,7 +9,7 @@ Router.map ->
     @route 'profile'
     @route 'description'
     @route 'information-elements'    
-    @route 'intertype-relations'#, { path: '/intertype-relations/:second_type' }
+    @route 'intertype-relations'
 
 
 `export default Router`
