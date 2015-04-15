@@ -1,9 +1,15 @@
 `import Ember from 'ember'`
 
 DichotomySelectorComponent = Ember.Component.extend
-  #. PROPERTIES
-  # currentType
+  #. PASSED PROPERTIES
+  #. currentType
+  #. PRIVATE PROPERTIES
+  #. eiValue
+  #. nsValue
+  #. tfValue
+  #. pjValue
 
+  classNames: ['dichotomy-selector']
 
   eiValue: (->
     this.get('currentType').charAt(0)
@@ -37,16 +43,15 @@ DichotomySelectorComponent = Ember.Component.extend
   ).property()
 
 
-  letterChanged: (->
-    Ember.run.once(this, 'changecurrentType')
+  typeChanged: (->
+    Ember.run.once(this, 'changeCurrentType')
   ).observes('eiValue', 'nsValue', 'tfValue', 'pjValue')
 
 
-  changecurrentType: ( ->
-    newcurrentType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
-    this.set('currentType', newcurrentType)
+  changeCurrentType: ( ->
+    newCurrentType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
+    this.set('currentType', newCurrentType)
   )
-
 
   actions:
 

@@ -1,8 +1,12 @@
 h3 Intertype Relations
 
-= activeType
+| Current Type
+dichotomy-selector currentType=activeType
 function-ordering currentPersonality=model.modelActive
 
+br
+
+| Other Type
 dichotomy-selector currentType=otherType
 function-ordering currentPersonality=model.modelOther
 

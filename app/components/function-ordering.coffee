@@ -1,7 +1,9 @@
 `import Ember from 'ember'`
 
 FunctionOrderingComponent = Ember.Component.extend()
-  #. PROPERTIES
+  #. PASSED PROPERTIES
   #. currentPersonality
+  #. PRIVATE PROPERTIES
+
 
 `export default FunctionOrderingComponent`
