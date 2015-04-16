@@ -1,6 +1,9 @@
 h3 Information Elements
 
-function-ordering currentPersonality=model
+= if isGeneral
+  |  
+= else
+  function-ordering currentPersonality=model
 
 
 = outlet

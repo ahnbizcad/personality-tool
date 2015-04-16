@@ -1,2 +1,2 @@
-.theory-button class=isTheory:theory-on:theory-off click="toggleTheory"
-  = isTheory
+.theory-button class=isGeneral:general click="toggleTheory"
+  = isGeneral

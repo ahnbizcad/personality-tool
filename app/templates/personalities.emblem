@@ -1,23 +1,23 @@
 h2 Personalities
 
-theory-button isTheory=isTheory
+theory-button isGeneral=isGeneral
 
-= if activeType
-  dichotomy-selector currentType=activeType
+dichotomy-selector currentType=activeType
 
-br
-br
-
-link-to 'personalities.profile' | Profile (Test)
-|  
-br
-link-to 'personalities.description' | Description (model A)
-| 
-br 
-link-to 'personalities.information-elements' | Information Elements
-| 
-br 
-link-to 'personalities.intertype-relations' | Intertype Relations
+nav#personalities-nav
+  ul
+    li
+      link-to 'personalities.profile' | Profile (Test)
+    li
+      link-to 'personalities.description' | Description (model A)
+    li
+      link-to 'personalities.dichotomies' | Dichotomies
+    li
+      link-to 'personalities.information-elements' | Information Elements
+    li
+      link-to 'personalities.intertype-relations' | Intertype Relations
+    li
+      link-to 'personalities.groups' | Groups
 
 br
 br

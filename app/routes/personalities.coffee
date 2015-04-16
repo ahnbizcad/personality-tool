@@ -6,7 +6,7 @@ PersonalitiesRoute = Ember.Route.extend
     activeType:
       replace: true
       refreshModel: true
-    isTheory: 
+    isGeneral: 
       replace: true
       refreshModel: true
 

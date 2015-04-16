@@ -1,17 +1,21 @@
 h3
   = model.socType
 
-div
-  | Quadra: 
-  = model.quadra
-div
-  | Club: 
-  = model.club
-div
-  | Temperament: 
-  = model.temperament
-div
-  | Romance style: 
-  = model.romanceStyle
+= if isGeneral
+  |  
+= else
+
+  div
+    | Quadra: 
+    = model.quadra
+  div
+    | Club: 
+    = model.club
+  div
+    | Temperament: 
+    = model.temperament
+  div
+    | Romance style: 
+    = model.romanceStyle
 
 = outlet

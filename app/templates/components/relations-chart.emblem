@@ -1,0 +1,41 @@
+table
+  tr
+    th
+    th
+    th
+    th
+    th
+    th
+    th
+    th
+
+    th
+    th
+    th
+    th
+    th
+    th
+    th
+    th
+
+  tr
+    td
+    td
+    td
+    td
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+    td
+    td
+    td
+    td
+
+
+= yield

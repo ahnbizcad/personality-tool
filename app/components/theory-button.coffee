@@ -2,19 +2,19 @@
 
 TheoryButtonComponent = Ember.Component.extend
   #. properties
-  #. isTheory
+  #. isGeneral
 
   actions:
 
     toggleTheory: ->
-      this.toggleProperty('isTheory')
+      this.toggleProperty('isGeneral')
 
 
     turnOnTheory: ->
-      isTheory = this.get('isTheory')
+      isGeneral = this.get('isGeneral')
 
-      if isTheory == false
-        this.set('isTheory', true)
+      if isGeneral == false
+        this.set('isGeneral', true)
 
 
 `export default TheoryButtonComponent`

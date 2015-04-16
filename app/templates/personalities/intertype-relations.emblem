@@ -1,13 +1,40 @@
 h3 Intertype Relations
 
-| Current Type
-dichotomy-selector currentType=activeType
-function-ordering currentPersonality=model.modelActive
+= if isGeneral
 
-br
+  | Current Type
+  dichotomy-selector currentType=activeType
+  function-ordering currentPersonality=model.modelActive
 
-| Other Type
-dichotomy-selector currentType=otherType
-function-ordering currentPersonality=model.modelOther
+  br
+
+  | Other Type
+  dichotomy-selector currentType=otherType
+  function-ordering currentPersonality=model.modelOther
+
+= else
+
+  link-to '' | Identity
+  link-to '' | Dual
+  link-to '' | Activation
+  link-to '' | Mirror
+
+  link-to '' | Kindred
+  link-to '' | Semi-dual
+  link-to '' | Illusionary
+  link-to '' | Super-ego
+
+  link-to '' | Look-a-like
+  link-to '' | Quasi-identical
+  link-to '' | Contrary
+  link-to '' | Conflicting
+
+  link-to '' | Benefactor
+  link-to '' | Benefitiary
+  link-to '' | Supervisor
+  link-to '' | Supervisee
+
+  relations-chart
+
 
 = outlet

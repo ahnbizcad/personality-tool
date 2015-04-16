@@ -1,8 +1,11 @@
 h3 Description
 
-= model.socType
+= if isGeneral
+  |  
+= else
+  
+  = model.socType
 
-= model.description
-
+  = model.description
 
 = outlet

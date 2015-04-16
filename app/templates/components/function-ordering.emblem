@@ -1,8 +1,16 @@
-= currentPersonality.function1
-= currentPersonality.function2
-= currentPersonality.function3
-= currentPersonality.function4
-= currentPersonality.function5
-= currentPersonality.function6
-= currentPersonality.function7
-= currentPersonality.function8
+.function
+  = currentPersonality.function1
+.function
+  = currentPersonality.function2
+.function
+  = currentPersonality.function3
+.function
+  = currentPersonality.function4
+.function
+  = currentPersonality.function5
+.function
+  = currentPersonality.function6
+.function
+  = currentPersonality.function7
+.function
+  = currentPersonality.function8
