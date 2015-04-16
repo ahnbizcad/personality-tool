@@ -1,8 +1,9 @@
-.dichotomy-button click="toggleEI"
-  = eiValueFiltered
-.dichotomy-button click="toggleNS"
-  = nsValueFiltered
-.dichotomy-button click="toggleTF"
-  = tfValueFiltered
-.dichotomy-button click="togglePJ"
-  = pjValue
+.dichotomy-wrapper click="disableGeneral"
+  .dichotomy-button click="toggleEI"
+    = eiValueFiltered
+  .dichotomy-button click="toggleNS"
+    = nsValueFiltered
+  .dichotomy-button click="toggleTF"
+    = tfValueFiltered
+  .dichotomy-button click="togglePJ"
+    = pjValue

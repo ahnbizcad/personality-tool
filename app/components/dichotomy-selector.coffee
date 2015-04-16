@@ -13,7 +13,7 @@ DichotomySelectorComponent = Ember.Component.extend
 
   eiValue: (->
     this.get('currentType').charAt(0)
-  ).property()
+  ).property('currentType')
 
   eiValueFiltered: (->
     this.get('eiValue').toUpperCase()
@@ -22,7 +22,7 @@ DichotomySelectorComponent = Ember.Component.extend
 
   nsValue: (->
     this.get('currentType').charAt(1)
-  ).property()
+  ).property('currentType')
 
   nsValueFiltered: (->
     this.get('nsValue').toUpperCase()
@@ -31,7 +31,7 @@ DichotomySelectorComponent = Ember.Component.extend
 
   tfValue: (->
     this.get('currentType').charAt(2)
-  ).property()
+  ).property('currentType')
 
   tfValueFiltered: (->
     this.get('tfValue').toUpperCase()
@@ -40,7 +40,7 @@ DichotomySelectorComponent = Ember.Component.extend
 
   pjValue: (->
     this.get('currentType').charAt(3)
-  ).property()
+  ).property('currentType')
 
 
   typeChanged: (->
@@ -54,6 +54,10 @@ DichotomySelectorComponent = Ember.Component.extend
   )
 
   actions:
+
+    disableGeneral: ->
+      if this.get('isGeneral')
+        this.set('isGeneral', false)
 
     toggleEI: ->
       eiValue = this.get('eiValue')

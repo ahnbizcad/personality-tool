@@ -2,7 +2,7 @@ h2 Personalities
 
 theory-button isGeneral=isGeneral
 
-dichotomy-selector currentType=activeType
+dichotomy-selector currentType=activeType isGeneral=isGeneral
 
 nav#personalities-nav
   ul
