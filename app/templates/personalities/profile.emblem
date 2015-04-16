@@ -9,13 +9,14 @@ h3
     | Quadra: 
     = model.quadra
   div
+    | Romance style: 
+    = model.romanceStyle
+  div
     | Club: 
     = model.club
   div
     | Temperament: 
     = model.temperament
-  div
-    | Romance style: 
-    = model.romanceStyle
+
 
 = outlet

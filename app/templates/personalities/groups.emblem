@@ -1,32 +1,44 @@
 h3 Groups
 
-| Quadra
-| alpha Ne Ti Fe Si valued (functions 1,2,5,6)
-| beta  Ni Te Fi Se valued (functions 1,2,5,6)
-| gamma Ni Te Fi Se valued (functions 1,2,5,6)
-| delta Ne Ti Fe Si valued (functions 1,2,5,6)
-br
-br
-| Club
-| researchers NT
-| pragmatists ST
-| humanitarians NF
-| socials SF
-br
-br
-| Temperament
-| flexible-maneurvering EP
-| linear-assertive EJ
-| receptive-adaptive IP
-| balanced-stable IJ
-br
-br
-| Romance Style
-| infantile Ne in ego block
-| victim Ni in ego block
-| aggressor Se in ego block
-| caregiver Si in ego block
-br
+= if isGeneral
 
+  | Quadra
+  | alpha Ne Ti Fe Si valued (functions 1,2,5,6)
+  | beta  Ni Te Fi Se valued (functions 1,2,5,6)
+  | gamma Ni Te Fi Se valued (functions 1,2,5,6)
+  | delta Ne Ti Fe Si valued (functions 1,2,5,6)
+  br
+  br
+  | Club
+  | researchers NT
+  | pragmatists ST
+  | humanitarians NF
+  | socials SF
+  br
+  br
+  | Temperament
+  | flexible-maneurvering EP
+  | linear-assertive EJ
+  | receptive-adaptive IP
+  | balanced-stable IJ
+  br
+  br
+  | Romance Style
+  | infantile Ne in ego block
+  | victim Ni in ego block
+  | aggressor Se in ego block
+  | caregiver Si in ego block
+  br
 
+= else
+
+  = model.quadra
+  br
+  = model.romanceStyle
+  br
+  = model.club
+  br
+  = model.temperament
+  br
+  
 = outlet

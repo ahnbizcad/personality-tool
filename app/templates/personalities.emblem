@@ -7,9 +7,9 @@ dichotomy-selector currentType=activeType
 nav#personalities-nav
   ul
     li
-      link-to 'personalities.profile' | Profile (Test)
+      link-to 'personalities.profile' | Profile
     li
-      link-to 'personalities.description' | Description (model A)
+      link-to 'personalities.description' | Description
     li
       link-to 'personalities.dichotomies' | Dichotomies
     li

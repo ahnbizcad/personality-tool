@@ -1,6 +1,6 @@
-.function.highlighted
+.function 
   = currentPersonality.function1
-.function.highlighted
+.function
   = currentPersonality.function2
 .function
   = currentPersonality.function3
