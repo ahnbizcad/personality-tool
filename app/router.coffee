@@ -10,7 +10,9 @@ Router.map ->
     @route 'description'
     @route 'dichotomies'    
     @route 'information-elements'
+    @route 'functions'
     @route 'intertype-relations'
     @route 'groups'
+    #@route 'mbti-guide'
 
 `export default Router`

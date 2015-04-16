@@ -1,5 +1,5 @@
 `import ApplicationAdapter from './application'`
 
-InformationElementAdapter = ApplicationAdapter.extend()
+InformationElementAdapter = DS.FixtureAdapter.extend()
 
 `export default InformationElementAdapter`

@@ -2,18 +2,6 @@ h3 Intertype Relations
 
 = if isGeneral
 
-  | Current Type
-  dichotomy-selector currentType=activeType
-  function-ordering currentPersonality=model.modelActive
-
-  br
-
-  | Other Type
-  dichotomy-selector currentType=otherType
-  function-ordering currentPersonality=model.modelOther
-
-= else
-
   link-to '' | Identity
   link-to '' | Dual
   link-to '' | Activation
@@ -34,7 +22,24 @@ h3 Intertype Relations
   link-to '' | Supervisor
   link-to '' | Supervisee
 
-  relations-chart
+= else
+
+  | Current Type
+  dichotomy-selector currentType=activeType
+  function-ordering currentPersonality=model.modelActive
+  
+  br
+  | 's 
+  = relation
+  |  is 
+  br
+
+  | Other Type
+  dichotomy-selector currentType=otherType
+  function-ordering currentPersonality=model.modelOther
+
+
+  /relations-chart
 
 
 = outlet
