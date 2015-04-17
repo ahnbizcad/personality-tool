@@ -11,5 +11,4 @@ PersonalitiesController = Ember.Controller.extend
   isGeneral: false
 
 
-
 `export default PersonalitiesController`

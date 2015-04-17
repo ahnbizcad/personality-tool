@@ -48,16 +48,14 @@ DichotomySelectorComponent = Ember.Component.extend
   ).observes('eiValue', 'nsValue', 'tfValue', 'pjValue')
 
 
-  changeCurrentType: ( ->
-    newCurrentType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
-    this.set('currentType', newCurrentType)
+  changeCurrentType: (->
+    newType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
+    this.sendAction('setNewType', newType)
+    this.sendAction('disableGeneral')
   )
 
-  actions:
 
-    disableGeneral: ->
-      if this.get('isGeneral')
-        this.set('isGeneral', false)
+  actions:
 
     toggleEI: ->
       eiValue = this.get('eiValue')

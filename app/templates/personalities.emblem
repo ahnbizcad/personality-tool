@@ -1,8 +1,8 @@
 h2 Personalities
 
-theory-button isGeneral=isGeneral
+theory-button isGeneral=isGeneral toggleGeneral="toggleGeneral"
 
-dichotomy-selector currentType=activeType isGeneral=isGeneral
+dichotomy-selector currentType=activeType setNewType="setActiveType" disableGeneral="disableGeneral"
 
 nav#personalities-nav
   ul

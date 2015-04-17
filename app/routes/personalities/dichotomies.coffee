@@ -2,4 +2,5 @@
 
 PersonalitiesDichotomiesRoute = Ember.Route.extend()
 
+
 `export default PersonalitiesDichotomiesRoute`

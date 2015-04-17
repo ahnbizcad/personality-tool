@@ -25,17 +25,17 @@ h3 Intertype Relations
 = else
 
   | Current Type
-  dichotomy-selector currentType=activeType
+  dichotomy-selector currentType=activeType setNewType="setActiveType"
   function-ordering currentPersonality=model.modelActive
   
   br
   | 's 
-  = relation
+  = currentRelation
   |  is 
   br
 
   | Other Type
-  dichotomy-selector currentType=otherType
+  dichotomy-selector currentType=otherType setNewType="setOtherType"
   function-ordering currentPersonality=model.modelOther
 
 

@@ -6,5 +6,6 @@ RelationsChartComponent = Ember.Component.extend
   #. PRIVATE PROPERTIES
 
   classNames: ['relations-chart']
+  
 
 `export default RelationsChartComponent`

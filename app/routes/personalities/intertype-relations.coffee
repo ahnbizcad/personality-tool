@@ -12,17 +12,7 @@ PersonalitiesIntertypeRelationsRoute = Ember.Route.extend
     Ember.RSVP.hash
       modelActive: this.modelFor('personalities').findBy('type', this.paramsFor('personalities').activeType)
       modelOther:  this.modelFor('personalities').findBy('type', params.otherType)
-
-
-  #afterModel: (resolvedModel, transition) ->
-  #  otherType = transition.queryParams.otherType
-  #  otherPersonality = this.modelFor('personalities').findBy('type', otherType)
-  #  this.set('otherPersonality', otherPersonality)
-
-
-  #setupController: (controller, model) ->
-  #  this._super(controller, model)
-  #  controller.set('otherPersonality', this.get('otherPersonality'))
+      modelIR:  this.store.find('intertype-relation')
 
 
 `export default PersonalitiesIntertypeRelationsRoute`
