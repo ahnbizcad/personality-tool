@@ -1,16 +1,16 @@
 h3 Dichotomies
 
 = if isGeneral
-  |  
-
-= else
   | E I
   br
   | N S
   br
   | T F
   br
-  | p j
+  | p j 
+
+= else
+  
   
   br
 

@@ -14,9 +14,16 @@ PersonalitiesIntertypeRelationsController = Ember.Controller.extend
   currentRelation: (->
     activeType = this.get('activeType')
     otherType = this.get('otherType')
-    model = this.get('model')
+    modelIR = this.get('model.modelIR')
 
     # get model object (and maybe the relation property later) based on the two input types.
+
+    #. this works
+    #modelIR.get('firstObject').get('relation')
+
+    #? recordArray doesnt respond to find, findBy, findById, filter, then
+    #modelIR.findById('1').then (promise) ->
+    #  promise.get('relation')
 
   ).property('activeType', 'otherType')
 

@@ -1,9 +1,22 @@
 .dichotomy-selector
   display: flex
   flex-flow: row nowrap
+  max-width: 400px
+  
+  &#primary-selector
+    margin: 0 auto
 
   background-color: $magneticRed
-  .dichotomy-button
-    flex: 0 1 0
+  border: 0.25em
 
-    padding: 10px
+  .dichotomy-button
+    flex: 1 1 0
+
+    text-align: center
+
+    &:before
+      padding-top: 100%
+      content: ""
+      display: inline-block
+      vertical-align: middle
+      

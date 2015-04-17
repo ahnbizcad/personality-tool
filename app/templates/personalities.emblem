@@ -1,8 +1,9 @@
 h2 Personalities
 
-theory-button isGeneral=isGeneral toggleGeneral="toggleGeneral"
+#selector
+  theory-button isGeneral=isGeneral toggleGeneral="toggleGeneral"
 
-dichotomy-selector currentType=activeType setNewType="setActiveType" disableGeneral="disableGeneral"
+  dichotomy-selector#primary-selector currentType=activeType setNewType="setActiveType" disableGeneral="disableGeneral"
 
 nav#personalities-nav
   ul
@@ -20,8 +21,5 @@ nav#personalities-nav
       link-to 'personalities.intertype-relations' | Intertype Relations
     li
       link-to 'personalities.groups' | Groups
-
-br
-br
 
 = outlet
