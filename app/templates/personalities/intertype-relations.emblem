@@ -2,6 +2,8 @@ h3 Intertype Relations
 
 = if isGeneral
 
+  relations-chart
+
   link-to '' | Identity
   link-to '' | Dual
   link-to '' | Activation
@@ -38,8 +40,6 @@ h3 Intertype Relations
   dichotomy-selector currentType=otherType setNewType="setOtherType"
   function-ordering currentPersonality=model.modelOther
 
-
-  /relations-chart
   = each item in model.modelIR
     = item.relation
 

@@ -3,13 +3,13 @@
 .function
   = currentPersonality.function2
 .function
-  = currentPersonality.function3
-.function
   = currentPersonality.function4
 .function
-  = currentPersonality.function5
+  = currentPersonality.function3
 .function
   = currentPersonality.function6
+.function
+  = currentPersonality.function5
 .function
   = currentPersonality.function7
 .function

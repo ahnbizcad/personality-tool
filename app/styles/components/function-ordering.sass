@@ -1,6 +1,18 @@
 .function-ordering
   display: flex;
   flex-flow: row wrap
+  max-width: 200px
 
   .function
+    flex: 1 1 1
+    width: 50%
 
+    text-align: center
+
+    background-color: purple
+    
+    &:before
+      padding-top: 100%
+      content: ""
+      display: inline-block
+      vertical-align: middle

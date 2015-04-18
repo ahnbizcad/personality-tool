@@ -1,28 +1,30 @@
-table
+table.relations-chart
   tr
-    th
-    th
-    th
-    th
-    th
-    th
-    th
-    th
+    th 
 
-    th
-    th
-    th
-    th
-    th
-    th
-    th
-    th
+    th ENTp
+    th ISFp
+    th ESFj
+    th INTj
+
+    th ENFj
+    th ISTj
+    th ESTp
+    th INFp
+
+    th ESFp
+    th INTp
+    th ENTj
+    th ISFj
+
+    th ESTj
+    th INFj
+    th ENFp
+    th ISTp
 
   tr
-    td
-    td
-    td
-    td
+    td ENTp
+
     td
     td
     td
@@ -32,10 +34,360 @@ table
     td
     td
     td
+
     td
     td
     td
     td
 
+    td
+    td
+    td
+    td
+
+  tr
+    td ISFp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ESFj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td INTj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ENFj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ISTj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ESTp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td INFp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ESFp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td INTp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ENTj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ISFj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ESTj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td INFj
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ENFp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td ISTp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
 
 = yield
