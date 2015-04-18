@@ -1,16 +1,38 @@
-.function 
-  = currentPersonality.function1
-.function
-  = currentPersonality.function2
-.function
-  = currentPersonality.function4
-.function
-  = currentPersonality.function3
-.function
-  = currentPersonality.function6
-.function
-  = currentPersonality.function5
-.function
-  = currentPersonality.function7
-.function
-  = currentPersonality.function8
+= if isGeneral
+
+  .function
+    | Leading
+  .function
+    | Creative
+  .function
+    | Vulnerable
+  .function
+    | Role
+  .function
+    | Mobilizing
+  .function
+    | Suggestive
+  .function
+    | Ignoring
+  .function
+    | Demonstrative
+
+= else
+
+  .function
+    = currentPersonality.function1
+  .function
+    = currentPersonality.function2
+  .function
+    = currentPersonality.function4
+  .function
+    = currentPersonality.function3
+  .function
+    = currentPersonality.function6
+  .function
+    = currentPersonality.function5
+  .function
+    = currentPersonality.function7
+  .function
+    = currentPersonality.function8
+
