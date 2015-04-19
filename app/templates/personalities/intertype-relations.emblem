@@ -32,7 +32,7 @@ h3 Intertype Relations
   
   br
   | 's 
-  = currentRelation
+  /= model.modelIR
   |  is 
   br
 
@@ -40,7 +40,7 @@ h3 Intertype Relations
   dichotomy-selector currentType=otherType setNewType="setOtherType"
   function-ordering currentPersonality=model.modelOther
 
-  = each item in model.modelIR
-    = item.relation
+  /= each item in model.modelIR
+  /  = item.relation
 
 = outlet

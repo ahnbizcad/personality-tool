@@ -1,12 +1,12 @@
 `import DS from 'ember-data'`
 
-IntertypeRelation = DS.Model.extend
-  mainType:  DS.attr('string')
-  otherType: DS.attr('string')
+Relationship = DS.Model.extend
+  mainType:  DS.belongsTo('personality')
+  otherType: DS.belongsTo('personality')
   relation:  DS.attr('string')
 
 
-IntertypeRelation.reopenClass
+Relationship.reopenClass
   FIXTURES: [
     {
       id: 1
@@ -105,6 +105,6 @@ IntertypeRelation.reopenClass
       relation:  '', 
     }
   ]
+ 
 
-
-`export default IntertypeRelation`
+`export default Relationship`

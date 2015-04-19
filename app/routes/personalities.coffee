@@ -19,14 +19,17 @@ PersonalitiesRoute = Ember.Route.extend
 
     setActiveType: (newActiveType) ->
       this.controller.set('activeType', newActiveType)
+      return
 
 
     toggleGeneral: ->
       this.controller.toggleProperty('isGeneral')
+      return
 
 
     disableGeneral: ->
       this.controller.set('isGeneral', false)
+      return
 
 
 `export default PersonalitiesRoute`

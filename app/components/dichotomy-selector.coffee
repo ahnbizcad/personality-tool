@@ -43,54 +43,62 @@ DichotomySelectorComponent = Ember.Component.extend
   ).property('currentType')
 
 
-  typeChanged: (->
-    Ember.run.once(this, 'changeCurrentType')
-  ).observes('eiValue', 'nsValue', 'tfValue', 'pjValue')
-
-
-  changeCurrentType: (->
-    newType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
-    this.sendAction('setNewType', newType)
-    this.sendAction('disableGeneral')
-  )
-
-
   actions:
 
     toggleEI: ->
       eiValue = this.get('eiValue')
+      newLetter = ''
 
       if eiValue == 'e'
-        this.set('eiValue', 'i')
+        newLetter = 'i'
       else if eiValue == 'i'
-        this.set('eiValue', 'e')
+        newLetter = 'e'
+
+      newType = newLetter + this.get('nsValue') + this.get('tfValue') + this.get('pjValue')
+      this.sendAction('setNewType', newType)
+      this.sendAction('disableGeneral')
 
 
     toggleNS: ->
       nsValue = this.get('nsValue')
-      
+      newLetter = ''
+
       if nsValue == 'n'
-        this.set('nsValue', 's')
+        newLetter = 's'
       else if nsValue == 's'
-        this.set('nsValue', 'n')
+        newLetter = 'n'
+
+      newType = this.get('eiValue') + newLetter + this.get('tfValue') + this.get('pjValue')
+      this.sendAction('setNewType', newType)
+      this.sendAction('disableGeneral')
 
 
     toggleTF: ->
       tfValue = this.get('tfValue')
-      
+      newLetter = ''
+
       if tfValue == 't'
-        this.set('tfValue', 'f')
+        newLetter = 'f'
       else if tfValue == 'f'
-        this.set('tfValue', 't')
+        newLetter = 't'
+
+      newType = this.get('eiValue') + this.get('nsValue') + newLetter + this.get('pjValue')
+      this.sendAction('setNewType', newType)
+      this.sendAction('disableGeneral')
 
 
     togglePJ: ->
       pjValue = this.get('pjValue')
+      newLetter = ''
       
       if pjValue == 'p'
-        this.set('pjValue', 'j')
+        newLetter = 'j'
       else if pjValue == 'j'
-        this.set('pjValue', 'p')
+        newLetter = 'p'
+
+      newType = this.get('eiValue') + this.get('nsValue') + this.get('tfValue') + newLetter
+      this.sendAction('setNewType', newType)
+      this.sendAction('disableGeneral')
 
 
 `export default DichotomySelectorComponent`

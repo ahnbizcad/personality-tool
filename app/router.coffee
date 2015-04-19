@@ -11,8 +11,10 @@ Router.map ->
     @route 'dichotomies'    
     @route 'information-elements'
     @route 'functions'
-    @route 'intertype-relations'
+    @route 'intertype-relations', ->
+      @route 'relation', { path: '/:relation' }
     @route 'groups'
+    
     #@route 'mbti-guide'
 
 `export default Router`
