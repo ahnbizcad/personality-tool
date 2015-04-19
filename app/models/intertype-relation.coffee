@@ -10,98 +10,66 @@ IntertypeRelation.reopenClass
   FIXTURES: [
     {
       id: 1
-      mainType:  'entp',
-      otherType: 'entp',
       relation:  'identity', 
     }
     {
       id: 2
-      mainType:  'entp',
-      otherType: 'isfp',
-      relation:  '', 
+      relation:  'dual', 
     }
     {
       id: 3
-      mainType:  'entp',
-      otherType: 'esfj',
-      relation:  '', 
+      relation:  'activation', 
     }
     {
       id: 4
-      mainType:  'entp',
-      otherType: 'intj',
-      relation:  '', 
+      relation:  'mirror', 
     }
     { 
       id: 5
-      mainType:  'entp',
-      otherType: 'enfj',
-      relation:  '',
+      relation:  'semi-dual',
     }
     {
       id: 6
-      mainType:  'entp',
-      otherType: 'istj',
-      relation:  '', 
+      relation:  'supervisor', 
     }
     {
       id: 7
-      mainType:  'entp',
-      otherType: 'estp',
       relation:  '', 
     }
     {
       id: 8
-      mainType:  'entp',
-      otherType: 'infp',
       relation:  '', 
     }
     {
       id: 9
-      mainType:  'entp',
-      otherType: 'esfp',
       relation:  '', 
     }
     {
       id: 10
-      mainType:  'entp',
-      otherType: 'intp',
       relation:  '', 
     }
     {
       id: 11
-      mainType:  'entp',
-      otherType: 'entj',
       relation:  '', 
     }
     {
       id: 12
-      mainType:  'entp',
-      otherType: 'isfj',
       relation:  '', 
     }
     {
       id: 13
-      mainType:  'entp',
-      otherType: 'estj',
       relation:  '', 
     }
     {
       id: 14
-      mainType:  'entp',
-      otherType: 'infj',
       relation:  '', 
     }
     {
       id: 15
-      mainType:  'entp',
-      otherType: 'enfp',
       relation:  '', 
     }
     {
       id: 16
-      mainType:  'entp',
-      otherType: 'istp',
       relation:  '', 
     }
   ]

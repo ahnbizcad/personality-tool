@@ -25,9 +25,7 @@ table.relations-chart
   tr
     td ENTp
 
-    = each entry in model.modelIRAll
-      td
-        = entry
+    td
     td
     td
     td

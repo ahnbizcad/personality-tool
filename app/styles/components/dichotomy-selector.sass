@@ -1,22 +1,23 @@
 .dichotomy-selector
   display: flex
   flex-flow: row nowrap
-  max-width: $primarySelectorWidth
+  
+  max-width: $comparisonSelectorWidth
 
   background-color: $magneticRed
-  border: 0.1rem solid black
 
   &#primary-selector
-    margin: 0 auto
-  
+    max-width: $primarySelectorWidth
 
-  
+    margin: 0 auto
+
   .dichotomy-button
     flex: 1 1 0
 
-    border: 0.25rem solid black
-
     text-align: center
+
+    border: 0.1rem solid black
+    font-size: 2rem
 
     &:before
       padding-top: 100%

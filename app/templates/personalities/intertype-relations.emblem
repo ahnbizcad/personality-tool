@@ -26,21 +26,23 @@ h3 Intertype Relations
 
 = else
 
-  | Current Type
-  dichotomy-selector currentType=activeType setNewType="setActiveType"
-  function-ordering currentPersonality=model.modelActive
-  
-  br
-  | 's 
-  /= model.modelIR
-  |  is 
-  br
+  div
+    
+    | 's 
+    /= model.modelIR
+    |  is 
 
-  | Other Type
-  dichotomy-selector currentType=otherType setNewType="setOtherType"
-  function-ordering currentPersonality=model.modelOther
+  #ir-comparison
+    .ir-block
+      | Current Type
+      dichotomy-selector currentType=activeType setNewType="setActiveType"
+      function-ordering currentPersonality=model.modelActive
+    .ir-block
+      | Other Type
+      dichotomy-selector currentType=otherType setNewType="setOtherType"
+      function-ordering currentPersonality=model.modelOther
 
-  /= each item in model.modelIR
-  /  = item.relation
+    /= each item in model.modelIR
+    /  = item.relation
 
 = outlet
