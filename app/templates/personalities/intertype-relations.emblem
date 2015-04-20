@@ -4,6 +4,12 @@ h3 Intertype Relations
 
   relations-chart
 
+  /? display links to each intertype-relation based on general (all) ir models in the route's model hook
+
+  /= each item in model.intertype-relations
+  /  = link-to, 'personalities.intertype-relations.relation', item.relation | item.relation
+
+
   link-to '' | Identity
   link-to '' | Dual
   link-to '' | Activation
@@ -34,11 +40,13 @@ h3 Intertype Relations
 
   #ir-comparison
     .ir-block
-      | Current Type
+      div
+        | Current Type
       dichotomy-selector currentType=activeType setNewType="setActiveType"
       function-ordering currentPersonality=model.modelActive
     .ir-block
-      | Other Type
+      div
+        | Other Type
       dichotomy-selector currentType=otherType setNewType="setOtherType"
       function-ordering currentPersonality=model.modelOther
 
