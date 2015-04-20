@@ -9,102 +9,1285 @@ Relationship = DS.Model.extend
 Relationship.reopenClass
   FIXTURES: [
     {
-      id: 1
-      mainType:  'entp',
-      otherType: 'entp',
-      relation:  'identity', 
-    }
+      "mainType": 1,
+      "otherType": 1,
+      "relation": ""
+    },
     {
-      id: 2
-      mainType:  'entp',
-      otherType: 'isfp',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 2,
+      "relation": ""
+    },
     {
-      id: 3
-      mainType:  'entp',
-      otherType: 'esfj',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 3,
+      "relation": ""
+    },
     {
-      id: 4
-      mainType:  'entp',
-      otherType: 'intj',
-      relation:  '', 
-    }
-    { 
-      id: 5
-      mainType:  'entp',
-      otherType: 'enfj',
-      relation:  '',
-    }
+      "mainType": 1,
+      "otherType": 4,
+      "relation": ""
+    },
     {
-      id: 6
-      mainType:  'entp',
-      otherType: 'istj',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 5,
+      "relation": ""
+    },
     {
-      id: 7
-      mainType:  'entp',
-      otherType: 'estp',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 6,
+      "relation": ""
+    },
     {
-      id: 8
-      mainType:  'entp',
-      otherType: 'infp',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 7,
+      "relation": ""
+    },
     {
-      id: 9
-      mainType:  'entp',
-      otherType: 'esfp',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 8,
+      "relation": ""
+    },
     {
-      id: 10
-      mainType:  'entp',
-      otherType: 'intp',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 9,
+      "relation": ""
+    },
     {
-      id: 11
-      mainType:  'entp',
-      otherType: 'entj',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 10,
+      "relation": ""
+    },
     {
-      id: 12
-      mainType:  'entp',
-      otherType: 'isfj',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 11,
+      "relation": ""
+    },
     {
-      id: 13
-      mainType:  'entp',
-      otherType: 'estj',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 12,
+      "relation": ""
+    },
     {
-      id: 14
-      mainType:  'entp',
-      otherType: 'infj',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 13,
+      "relation": ""
+    },
     {
-      id: 15
-      mainType:  'entp',
-      otherType: 'enfp',
-      relation:  '', 
-    }
+      "mainType": 1,
+      "otherType": 14,
+      "relation": ""
+    },
     {
-      id: 16
-      mainType:  'entp',
-      otherType: 'istp',
-      relation:  '', 
+      "mainType": 1,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 1,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 2,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 3,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 4,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 5,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 6,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 7,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 8,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 9,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 10,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 11,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 12,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 13,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 14,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 15,
+      "otherType": 16,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 1,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 2,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 3,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 4,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 5,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 6,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 7,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 8,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 9,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 10,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 11,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 12,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 13,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 14,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 15,
+      "relation": ""
+    },
+    {
+      "mainType": 16,
+      "otherType": 16,
+      "relation": ""
     }
   ]
- 
 
 `export default Relationship`

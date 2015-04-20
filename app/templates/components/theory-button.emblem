@@ -1,2 +1,1 @@
-.theory-button class=isGeneral:general click="toggle"
-  = isGeneral
+| General Theory

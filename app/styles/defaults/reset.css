@@ -70,21 +70,7 @@
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
     }
-
-    /* 
-    * box-sizing CSS Tricks https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-    */
-
-    /*
-    * Issue: did this not work, or is flexbox settings causing ".functions" to take whole width?;
-    */
-    html {
-      box-sizing: border-box;
-    }
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-
+     
     /*
     * Addresses `font-family` inconsistency between `textarea` and other form
     * elements.

@@ -1,20 +1,23 @@
 .function-ordering
   display: flex;
   flex-flow: row wrap
-
   max-width: $comparisonSelectorWidth
+
+  background-color: #eeeeee
 
   .function
     flex: 1 1 auto
     width: 50%
 
     text-align: center
+    @include make-square()
 
+    border: 0.1rem solid black
     background-color: $disabledGrey
 
-    
-    &:before
-      padding-top: 100%
-      content: ""
-      display: inline-block
-      vertical-align: middle
+
+  .function-spacer
+      @extend .function
+
+      background-color: transparent
+      border: none

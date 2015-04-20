@@ -4,12 +4,14 @@ DichotomySelectorComponent = Ember.Component.extend
   #. PASSED PROPERTIES
   #. currentType
   #. PRIVATE PROPERTIES
+  #. isGeneral
   #. eiValue
   #. nsValue
   #. tfValue
   #. pjValue
 
   classNames: ['dichotomy-selector']
+  classNameBindings: ['isGeneral:general' ]
 
   eiValue: (->
     this.get('currentType').charAt(0)

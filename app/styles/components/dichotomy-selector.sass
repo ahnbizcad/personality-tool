@@ -2,22 +2,27 @@
   display: flex
   flex-flow: row nowrap
   
+  // not clean. make specific subclass
   max-width: $comparisonSelectorWidth
 
   background-color: $magneticRed
 
   &#primary-selector
     max-width: $primarySelectorWidth
-
     margin: 0 auto
 
+  &.general
+    .dichotomy-button
+      background-color: $disabledGrey
+
   .dichotomy-button
-    flex: 1 1 auto
+    flex: 1 1 0
 
     text-align: center
 
     border: 0.1rem solid black
     font-size: 2rem
+    color: white
 
     &:before
       padding-top: 100%

@@ -2,18 +2,33 @@
 
   .function
     | Leading
+  .function-spacer
+
+  .function-spacer
   .function
     | Creative
-  .function
-    | Vulnerable
+  
+  .function-spacer
   .function
     | Role
+  
   .function
-    | Mobilizing
+    | Vulnerable
+  .function-spacer
+
+  .function-spacer
   .function
     | Suggestive
+  
+  .function
+    | Mobilizing
+  .function-spacer
+
   .function
     | Ignoring
+  .function-spacer
+
+  .function-spacer
   .function
     | Demonstrative
 
@@ -21,18 +36,33 @@
 
   .function
     = currentPersonality.function1
+  .function-spacer
+
+  .function-spacer
   .function
     = currentPersonality.function2
-  .function
-    = currentPersonality.function4
+
+  .function-spacer
   .function
     = currentPersonality.function3
+
   .function
-    = currentPersonality.function6
+    = currentPersonality.function4
+  .function-spacer
+
+  .function-spacer
   .function
     = currentPersonality.function5
+  
+  .function
+    = currentPersonality.function6
+  .function-spacer
+
   .function
     = currentPersonality.function7
+  .function-spacer
+
+  .function-spacer
   .function
     = currentPersonality.function8
 

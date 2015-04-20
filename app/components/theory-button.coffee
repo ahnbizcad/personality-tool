@@ -1,14 +1,15 @@
 `import Ember from 'ember'`
 
 TheoryButtonComponent = Ember.Component.extend
-  #. properties
+  #. PASSED PROPERTIES
   #. isGeneral
 
+  classNames: ['theory-button']
+  classNameBindings: ['isGeneral:general']
 
-  actions:
 
-    toggle: ->
-      this.sendAction('toggleGeneral')
+  click: ->
+    this.sendAction()
 
 
 `export default TheoryButtonComponent`

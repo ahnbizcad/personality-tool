@@ -9,67 +9,67 @@ IntertypeRelation = DS.Model.extend
 IntertypeRelation.reopenClass
   FIXTURES: [
     {
-      id: 1
+      id: 1,
       relation:  'identity', 
     }
     {
-      id: 2
+      id: 2,
       relation:  'dual', 
     }
     {
-      id: 3
+      id: 3,
       relation:  'activation', 
     }
     {
-      id: 4
+      id: 4,
       relation:  'mirror', 
     }
     { 
-      id: 5
+      id: 5,
       relation:  'semi-dual',
     }
     {
-      id: 6
+      id: 6,
       relation:  'supervisor', 
     }
     {
-      id: 7
+      id: 7,
       relation:  '', 
     }
     {
-      id: 8
+      id: 8,
       relation:  '', 
     }
     {
-      id: 9
+      id: 9,
       relation:  '', 
     }
     {
-      id: 10
+      id: 10,
       relation:  '', 
     }
     {
-      id: 11
+      id: 11,
       relation:  '', 
     }
     {
-      id: 12
+      id: 12,
       relation:  '', 
     }
     {
-      id: 13
+      id: 13,
       relation:  '', 
     }
     {
-      id: 14
+      id: 14,
       relation:  '', 
     }
     {
-      id: 15
+      id: 15,
       relation:  '', 
     }
     {
-      id: 16
+      id: 16,
       relation:  '', 
     }
   ]
