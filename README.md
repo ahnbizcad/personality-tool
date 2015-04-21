@@ -3,6 +3,8 @@
 A user-friendly tool to browse and socionics personality theory.
 Plug in a specific personality type on every explanation page.
 
+* [personality-tool](http://personality-tool.divshot.io)
+
 
 ## Issues, In-progress
 

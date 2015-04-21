@@ -2,20 +2,21 @@ theory-button class="clickable" isGeneral=isGeneral action="toggleGeneral" saet=
 
 dichotomy-selector#primary-selector currentType=activeType isGeneral=isGeneral setNewType="setActiveType" disableGeneral="disableGeneral"
 
-ul#personalities-navbar
-  li
-    link-to 'personalities.profile' | Profile
-  li
-    link-to 'personalities.description' | Description
-  li
-    link-to 'personalities.dichotomies' | Dichotomies
-  li
-    link-to 'personalities.information-elements' | Information Elements
-  li
-    link-to 'personalities.functions' | Functions
-  li
-    link-to 'personalities.intertype-relations' | Intertype Relations
-  li
-    link-to 'personalities.groups' | Groups
+nav#personalities-navbar
+  ul
+    li
+      link-to 'personalities.profile' | Profile
+    li
+      link-to 'personalities.description' | Description
+    li
+      link-to 'personalities.dichotomies' | Dichotomies
+    li
+      link-to 'personalities.information-elements' | Information Elements
+    li
+      link-to 'personalities.functions' | Functions
+    li
+      link-to 'personalities.intertype-relations' | Intertype Relations
+    li
+      link-to 'personalities.groups' | Groups
 
 = outlet
