@@ -4,5 +4,5 @@ dichotomy-selector#primary-selector currentType=activeType isGeneral=isGeneral s
 
 navbar-main
 
-
-= outlet
+.content
+  = outlet

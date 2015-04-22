@@ -13,6 +13,7 @@ DichotomySelectorComponent = Ember.Component.extend
   classNames: ['dichotomy-selector']
   classNameBindings: ['isGeneral:general' ]
 
+
   eiValue: (->
     this.get('currentType').charAt(0)
   ).property('currentType')

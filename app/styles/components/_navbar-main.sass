@@ -18,9 +18,13 @@ nav#personalities-navbar
 
       border: 1px solid teal
       padding: 0.5rem
-      background-color: $classyGrey
-
-      &:hover
-        background-color: $classyGrey + $hoverBrighter
+      background-color: $disabledGrey
 
       &.active
+        background-color: $magneticDrop
+
+      &:hover
+        background-color: $magneticDrop + $hoverBrighter
+
+      &.active:hover
+        background-color: $magneticDrop

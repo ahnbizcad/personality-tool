@@ -1,9 +1,8 @@
-h3 Functions
+#container-functions  
+  = if isGeneral
+    function-ordering isGeneral=isGeneral
 
-= if isGeneral
-  function-ordering isGeneral=isGeneral
-  
-= else
-  function-ordering currentPersonality=model
+  = else
+    function-ordering currentPersonality=model
 
-= outlet
+  = outlet
