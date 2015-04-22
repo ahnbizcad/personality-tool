@@ -1,0 +1,26 @@
+nav#personalities-navbar
+  display: flex
+  flex-flow: row nowrap
+
+  ul
+    flex: 1 1 auto
+
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+
+    li
+      flex: 1 1 auto
+
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+
+      border: 1px solid teal
+      padding: 0.5rem
+      background-color: $classyGrey
+
+      &:hover
+        background-color: $classyGrey + $hoverBrighter
+
+      &.active

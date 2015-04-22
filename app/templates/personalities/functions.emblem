@@ -2,6 +2,7 @@ h3 Functions
 
 = if isGeneral
   function-ordering isGeneral=isGeneral
+  
 = else
   function-ordering currentPersonality=model
 

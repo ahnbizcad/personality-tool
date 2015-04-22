@@ -1,0 +1,8 @@
+ul
+  link-to 'personalities.profile' tagName="li" class="clickable" | Profile
+  link-to 'personalities.description' tagName="li" class="clickable" | Description
+  link-to 'personalities.dichotomies' tagName="li" class="clickable" | Dichotomies
+  link-to 'personalities.information-elements' tagName="li" class="clickable" | Information Elements
+  link-to 'personalities.functions' tagName="li" class="clickable" | Functions
+  link-to 'personalities.intertype-relations' tagName="li" class="clickable" | Intertype Relations
+  link-to 'personalities.groups' tagName="li" class="clickable" | Groups
