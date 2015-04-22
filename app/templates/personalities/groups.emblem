@@ -1,30 +1,36 @@
-ul.group
-  | Quadra
-  li class=isGeneral:active alpha Ne Ti Fe Si valued (functions 1,2,5,6)
-  li class=isGeneral:active beta  Ni Te Fi Se valued (functions 1,2,5,6)
-  li class=isGeneral:active gamma Ni Te Fi Se valued (functions 1,2,5,6)
-  li class=isGeneral:active delta Ne Ti Fe Si valued (functions 1,2,5,6)
+.groups
+  .group.card
+    ul.no-bullet
+      h3.centered Quadra
+      li class=isAlpha:active alpha Ne Ti Fe Si valued (functions 1,2,5,6)
+      li class=isBeta:active beta  Ni Te Fi Se valued (functions 1,2,5,6)
+      li class=isGamma:active gamma Ni Te Fi Se valued (functions 1,2,5,6)
+      li class=isDelta:active delta Ne Ti Fe Si valued (functions 1,2,5,6)
 
-ul.group
-  | Club
-  li class=isGeneral:active researchers NT
-  li class=isGeneral:active pragmatists ST
-  li class=isGeneral:active humanitarians NF
-  li class=isGeneral:active socials SF
+  .group.card
+    ul.no-bullet
+      h3.centered Club
+      li class=isResearchers:active researchers NT
+      li class=isPragmatists:active pragmatists ST
+      li class=isHumanitarians:active humanitarians NF
+      li class=isSocials:active socials SF
 
-ul.group
-  | Temperament
-  li class=isGeneral:active flexible-maneurvering EP
-  li class=isGeneral:active linear-assertive EJ
-  li class=isGeneral:active receptive-adaptive IP
-  li class=isGeneral:active balanced-stable IJ
+  .group.card
+    ul.no-bullet
+      h3.centered Temperament
+      li class=isFM:active flexible-maneurvering EP
+      li class=isLA:active linear-assertive EJ
+      li class=isRA:active receptive-adaptive IP
+      li class=isBS:active balanced-stable IJ
 
-ul.group
-  | Romance Style
-  li class=isGeneral:active infantile Ne in ego block
-  li class=isGeneral:active victim Ni in ego block
-  li class=isGeneral:active aggressor Se in ego block
-  li class=isGeneral:active caregiver Si in ego block
+  .group.card
+    ul.no-bullet
+      h3.centered Romance Style
+      li class=isInfantile:active infantile Ne in ego block
+      li class=isCaregiver:active caregiver Si in ego block
+      li class=isVictim:active victim Ni in ego block
+      li class=isAggressor:active aggressor Se in ego block
+      
 
 
 = outlet
