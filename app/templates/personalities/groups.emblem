@@ -1,42 +1,30 @@
-= if isGeneral
-
+ul.group
   | Quadra
-  | alpha Ne Ti Fe Si valued (functions 1,2,5,6)
-  | beta  Ni Te Fi Se valued (functions 1,2,5,6)
-  | gamma Ni Te Fi Se valued (functions 1,2,5,6)
-  | delta Ne Ti Fe Si valued (functions 1,2,5,6)
-  br
-  br
+  li class=isGeneral:active alpha Ne Ti Fe Si valued (functions 1,2,5,6)
+  li class=isGeneral:active beta  Ni Te Fi Se valued (functions 1,2,5,6)
+  li class=isGeneral:active gamma Ni Te Fi Se valued (functions 1,2,5,6)
+  li class=isGeneral:active delta Ne Ti Fe Si valued (functions 1,2,5,6)
+
+ul.group
   | Club
-  | researchers NT
-  | pragmatists ST
-  | humanitarians NF
-  | socials SF
-  br
-  br
+  li class=isGeneral:active researchers NT
+  li class=isGeneral:active pragmatists ST
+  li class=isGeneral:active humanitarians NF
+  li class=isGeneral:active socials SF
+
+ul.group
   | Temperament
-  | flexible-maneurvering EP
-  | linear-assertive EJ
-  | receptive-adaptive IP
-  | balanced-stable IJ
-  br
-  br
+  li class=isGeneral:active flexible-maneurvering EP
+  li class=isGeneral:active linear-assertive EJ
+  li class=isGeneral:active receptive-adaptive IP
+  li class=isGeneral:active balanced-stable IJ
+
+ul.group
   | Romance Style
-  | infantile Ne in ego block
-  | victim Ni in ego block
-  | aggressor Se in ego block
-  | caregiver Si in ego block
-  br
+  li class=isGeneral:active infantile Ne in ego block
+  li class=isGeneral:active victim Ni in ego block
+  li class=isGeneral:active aggressor Se in ego block
+  li class=isGeneral:active caregiver Si in ego block
 
-= else
 
-  = model.quadra
-  br
-  = model.romanceStyle
-  br
-  = model.club
-  br
-  = model.temperament
-  br
-  
 = outlet
