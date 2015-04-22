@@ -8,6 +8,7 @@ PersonalitiesIntertypeRelationsRelationRoute = Ember.Route.extend
     #this.store.find('relationship', { mainType: params.activeType, otherType: params.otherType }).then (result) ->
     #  result.get('firstObject')
 
+
   serialize: (model) ->
     { relation: model.get('relation') }
 

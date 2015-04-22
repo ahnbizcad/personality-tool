@@ -11,6 +11,13 @@ PersonalitiesIntertypeRelationsController = Ember.Controller.extend
   otherType: 'entp'
 
 
+  validations:
+    otherType:
+      inclusion:
+        in: ['entp', 'isfp', 'esfj', 'intp', 'enfj', 'istj', 'estp', 'infp', 'esfp', 'intp', 'estj', 'isfj', 'estj', 'infj', 'enfp', 'istp']
+        allowBlank: true
+
+
   actions:
 
     setOtherType: (newType) ->
