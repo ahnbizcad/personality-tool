@@ -9,6 +9,11 @@ nav#personalities-navbar
     flex-flow: row wrap
     align-items: center
 
+    border-top: 2px solid $magneticDrop - $two
+    border-left: 2px solid $magneticDrop - $two
+
+    background-color: $classyGrey
+
     li
       flex: 1 1 auto
 
@@ -16,15 +21,16 @@ nav#personalities-navbar
       flex-flow: row nowrap
       justify-content: center
 
-      border: 1px solid teal
       padding: 0.5rem
-      background-color: $disabledGrey
+
+      border-bottom: 2px solid $magneticDrop - $two
+      border-right: 2px solid $magneticDrop - $two
 
       &.active
         background-color: $magneticDrop
 
       &:hover
-        background-color: $magneticDrop + $hoverBrighter
+        background-color: $magneticDrop + $two
 
       &.active:hover
         background-color: $magneticDrop
