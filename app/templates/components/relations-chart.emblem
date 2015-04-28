@@ -1,4 +1,4 @@
-table.relations-chart
+table#relations-chart
   tr
     th 
 

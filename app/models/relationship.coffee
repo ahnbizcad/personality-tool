@@ -11,12 +11,12 @@ Relationship.reopenClass
     {
       "mainType": 1,
       "otherType": 1,
-      "relation": ""
+      "relation": "identity"
     },
     {
       "mainType": 1,
       "otherType": 2,
-      "relation": ""
+      "relation": "dual"
     },
     {
       "mainType": 1,

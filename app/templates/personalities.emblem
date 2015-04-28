@@ -1,6 +1,6 @@
-theory-button class="clickable" isGeneral=isGeneral action="toggleGeneral" saet="aset"
-
-dichotomy-selector#primary-selector currentType=activeType isGeneral=isGeneral setNewType="setActiveType" disableGeneral="disableGeneral"
+#selector
+  theory-button class="clickable" isGeneral=isGeneral action="toggleGeneral" saet="aset"
+  dichotomy-selector#primary-selector currentType=activeType isGeneral=isGeneral setNewType="setActiveType" disableGeneral="disableGeneral"
 
 navbar-main
 

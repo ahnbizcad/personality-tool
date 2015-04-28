@@ -9,21 +9,22 @@ PersonalitiesIntertypeRelationsRoute = Ember.Route.extend
 
 
   model: (params) ->
+    Ember.RSVP.hash
+      modelIntertypeRelations: this.store.find('intertype-relation')
+      modelPersonalities:     this.store.find('personality')
+    
+    #? Why is the condition being false when isGeneral is true?
 
-    if params.isGeneral
-      Ember.RSVP.hash
-        modelPersonalities: this.modelFor('personalities')
-        mdoelRelationships: this.store.find('relationships')
-    else
-      Ember.RSVP.hash
-        modelActive: this.modelFor('personalities').findBy('type', this.paramsFor('personalities').activeType)
-        modelOther:  this.modelFor('personalities').findBy('type', params.otherType)
-        
-        #? set model to all models if isGeneral is true
-        #? set model to specific IR if isGeneral is false ?
-        #? set model to relationships?
-
-        #modelIR:  this.store.find('intertype-relation', { mainType: params.activeType, otherType: params.otherType })
+    #if (params.isGeneral == true)
+    #  Ember.RSVP.hash
+    #    this.store.find('intertype-relation')
+    #    modelPersonalities:     this.store.find('personality')
+    #else
+    #  Ember.RSVP.hash
+    #    modelActive: this.modelFor('personalities').findBy('type', this.paramsFor('personalities').activeType)
+    #    modelOther:  this.modelFor('personalities').findBy('type', params.otherType)
+    #    modelRelationship:  this.store.find('relationship', { mainType: params.activeType, otherType: params.otherType }).then (result) ->
+    #      result.Relationship
 
 
 `export default PersonalitiesIntertypeRelationsRoute`

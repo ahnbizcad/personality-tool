@@ -1,76 +1,91 @@
 `import DS from 'ember-data'`
 
 IntertypeRelation = DS.Model.extend
-  mainType:  DS.attr('string')
-  otherType: DS.attr('string')
-  relation:  DS.attr('string')
+  relation: DS.attr('string')
+  text:     DS.attr('string')
 
 
 IntertypeRelation.reopenClass
   FIXTURES: [
     {
       id: 1,
-      relation:  'identity', 
+      relation:  'identity',
+      text: ""
     }
     {
       id: 2,
-      relation:  'dual', 
+      relation:  'dual',
+      text: ""
     }
     {
       id: 3,
-      relation:  'activation', 
+      relation:  'activation',
+      text: ""
     }
     {
       id: 4,
-      relation:  'mirror', 
+      relation:  'mirror',
+      text: ""
     }
     { 
       id: 5,
-      relation:  'semi-dual',
+      relation:  'benefactor',
+      text: ""
     }
     {
       id: 6,
-      relation:  'supervisor', 
+      relation:  'supervisee',
+      text: ""
     }
     {
       id: 7,
-      relation:  '', 
+      relation:  'business',
+      text: ""
     }
     {
       id: 8,
-      relation:  '', 
+      relation:  'mirage',
+      text: ""
     }
     {
       id: 9,
-      relation:  '', 
+      relation:  'super-ego',
+      text: ""
     }
     {
       id: 10,
-      relation:  '', 
+      relation:  'extinguishment',
+      text: ""
     }
     {
       id: 11,
-      relation:  '', 
+      relation:  'quasi-identity',
+      text: ""
     }
     {
       id: 12,
-      relation:  '', 
+      relation:  'conflict',
+      text: ""
     }
     {
       id: 13,
-      relation:  '', 
+      relation:  'beneficiary',
+      text: ""
     }
     {
       id: 14,
-      relation:  '', 
+      relation:  'supervisor',
+      text: ""
     }
     {
       id: 15,
-      relation:  '', 
+      relation:  'kindred',
+      text: ""
     }
     {
       id: 16,
-      relation:  '', 
+      relation:  'semi-dual',
+      text: ""
     }
   ]
 

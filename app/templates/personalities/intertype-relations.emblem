@@ -1,40 +1,22 @@
 = if isGeneral
 
+  ul.no-bullet
+    = each ir in model.modelIntertypeRelations
+      li
+        link-to 'personalities.intertype-relations.relation' ir.relation 
+          = ir.relation
+
   relations-chart
-
-  /? display links to each intertype-relation based on general (all) ir models in the route's model hook
-
-  /= each model.intertype-relations as |ir|
-  /  = link-to, 'personalities.intertype-relations.relation', ir.relation | ir.relation
-
-
-  link-to '' | Identity
-  link-to '' | Dual
-  link-to '' | Activation
-  link-to '' | Mirror
-
-  link-to '' | Kindred
-  link-to '' | Semi-dual
-  link-to '' | Illusionary
-  link-to '' | Super-ego
-
-  link-to '' | Look-a-like
-  link-to '' | Quasi-identical
-  link-to '' | Contrary
-  link-to '' | Conflicting
-
-  link-to '' | Benefactor
-  link-to '' | Benefitiary
-  link-to '' | Supervisor
-  link-to '' | Supervisee
 
 = else
 
   div
     
-    | 's 
-    /= model.modelIR
-    |  is 
+    | 's
+    '
+    /= model.modelRelationship.relation
+    '
+    | is 
 
   #ir-comparison
     .ir-block
@@ -42,13 +24,11 @@
         | Current Type
       dichotomy-selector currentType=activeType setNewType="setActiveType"
       function-ordering currentPersonality=model.modelActive
+
     .ir-block
       div
         | Other Type
       dichotomy-selector currentType=otherType setNewType="setOtherType"
       function-ordering currentPersonality=model.modelOther
-
-    /= each item in model.modelIR
-    /  = item.relation
 
 = outlet

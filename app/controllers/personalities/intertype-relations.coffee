@@ -14,7 +14,6 @@ PersonalitiesIntertypeRelationsController = Ember.Controller.extend
   checkOtherType: ( ->
     otherType = this.get('otherType')
 
-    #. if not in list
     unless (['entp','isfp','esfj','intj','enfj','istj','estp','infp','esfp','intp','entj','isfj','estj','infj','enfp','istp'].indexOf(otherType) >= 0)
       Ember.run.once(this, "rectifyOtherType")
 

@@ -5,10 +5,10 @@ Router = Ember.Router.extend
   location: config.locationType
 
 Router.map ->
-  @resource 'personalities', { path: '/' }, ->
+  @route 'personalities', { path: '/' }, ->
     @route 'profile'
     @route 'description'
-    @route 'dichotomies'    
+    @route 'dichotomies'
     @route 'information-elements'
     @route 'functions'
     @route 'intertype-relations', ->

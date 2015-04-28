@@ -14,7 +14,6 @@ PersonalitiesController = Ember.Controller.extend
   checkActiveType: ( ->
     activeType = this.get('activeType')
 
-    #. if not in list
     if !(['entp','isfp','esfj','intj','enfj','istj','estp','infp','esfp','intp','entj','isfj','estj','infj','enfp','istp'].indexOf(activeType) >= 0)
       Ember.run.once(this, "rectifyActiveType")
   ).observes('activeType')
