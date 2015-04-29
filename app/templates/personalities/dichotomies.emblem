@@ -1,5 +1,5 @@
-#row-dichotomy
-  x-dichotomy currentType=activeType
+#row-dichotomies
+  x-dichotomy currentType=activeType isGeneral=isGeneral
 
 
 = outlet
