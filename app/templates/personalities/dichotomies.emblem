@@ -1,15 +1,5 @@
-= if isGeneral
-  | E I
-  br
-  | N S
-  br
-  | T F
-  br
-  | p j 
+#row-dichotomy
+  x-dichotomy currentType=activeType
 
-= else
-  
-  
-  br
 
 = outlet

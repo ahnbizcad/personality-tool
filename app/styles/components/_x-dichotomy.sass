@@ -1,0 +1,16 @@
+.x-dichotomy
+  display: flex
+  flex-flow: row wrap
+  max-width: $comparisonSelectorWidth
+
+  .dichotomy
+    flex: 1 1 auto
+    width: 50%
+
+    text-align: center
+    @include make-square()
+
+    background-color: $magneticDrop
+
+    &.active
+      border: 2px solid red

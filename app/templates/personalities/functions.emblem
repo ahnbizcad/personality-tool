@@ -1,4 +1,4 @@
-#container-functions  
+#container-functions
   = if isGeneral
     function-ordering isGeneral=isGeneral
 

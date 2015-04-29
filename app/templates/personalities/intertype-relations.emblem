@@ -1,14 +1,16 @@
-= if isGeneral
+relations-chart currentPersonality=model.modelActive otherPersonality=model.modelOther
 
+div
   ul.no-bullet
     = each ir in model.modelIntertypeRelations
       li
         link-to 'personalities.intertype-relations.relation' ir.relation 
           = ir.relation
 
-  relations-chart
+  = outlet "relation"
 
-= else
+
+= unless isGeneral
 
   div
     
@@ -30,5 +32,3 @@
         | Other Type
       dichotomy-selector currentType=otherType setNewType="setOtherType"
       function-ordering currentPersonality=model.modelOther
-
-= outlet

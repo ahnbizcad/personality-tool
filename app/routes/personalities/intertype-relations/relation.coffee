@@ -11,4 +11,8 @@ PersonalitiesIntertypeRelationsRelationRoute = Ember.Route.extend
     { relation: model.get('relation') }
 
 
+  renderTemplate: ->
+    this.render({ outlet: 'relation' })
+
+
 `export default PersonalitiesIntertypeRelationsRelationRoute`

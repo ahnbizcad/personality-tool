@@ -1,0 +1,18 @@
+.dichotomy class=isE:active
+  | E
+.dichotomy class=isI:active
+  | I
+.dichotomy class=isN:active
+  | N
+.dichotomy class=isS:active
+  | S
+.dichotomy class=isT:active
+  | T
+.dichotomy class=isF:active
+  | F
+.dichotomy class=isP:active
+  | p
+.dichotomy class=isJ:active
+  | j
+
+= yield
