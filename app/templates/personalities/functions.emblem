@@ -1,8 +1,8 @@
-#container-functions
+.flex-row-nowrap.flex-main-centered
   = if isGeneral
     function-ordering isGeneral=isGeneral
 
   = else
     function-ordering currentPersonality=model
 
-  = outlet
+= outlet

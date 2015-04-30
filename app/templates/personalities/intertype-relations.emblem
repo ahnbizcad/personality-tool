@@ -1,13 +1,4 @@
-relations-chart currentPersonality=model.modelActive otherPersonality=model.modelOther
-
-div
-  ul.no-bullet
-    = each ir in model.modelIntertypeRelations
-      li
-        link-to 'personalities.intertype-relations.relation' ir.relation 
-          = ir.relation
-
-  = outlet "relation"
+= outlet "relation"
 
 
 = unless isGeneral
@@ -20,15 +11,28 @@ div
     '
     | is 
 
-  #ir-comparison
-    .ir-block
-      div
-        | Current Type
-      dichotomy-selector currentType=activeType setNewType="setActiveType"
-      function-ordering currentPersonality=model.modelActive
+  .flex-row-nowrap
+    .ir-compare
+      .ir-block
+        div
+          | Current Type
+        dichotomy-selector currentType=activeType setNewType="setActiveType"
+        function-ordering currentPersonality=model.modelActive
 
-    .ir-block
-      div
-        | Other Type
-      dichotomy-selector currentType=otherType setNewType="setOtherType"
-      function-ordering currentPersonality=model.modelOther
+    .ir-compare
+      .ir-block
+        div
+          | Other Type
+        dichotomy-selector currentType=otherType setNewType="setOtherType"
+        function-ordering currentPersonality=model.modelOther
+
+
+div
+  ul.no-bullet
+    = each ir in model.modelIntertypeRelations
+      li
+        link-to 'personalities.intertype-relations.relation' ir.relation 
+          = ir.relation
+
+
+relations-chart currentPersonality=model.modelActive otherPersonality=model.modelOther

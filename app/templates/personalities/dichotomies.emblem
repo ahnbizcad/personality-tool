@@ -1,4 +1,4 @@
-#row-dichotomies
+.flex-row-nowrap.flex-main-centered
   x-dichotomy currentType=activeType isGeneral=isGeneral
 
 
