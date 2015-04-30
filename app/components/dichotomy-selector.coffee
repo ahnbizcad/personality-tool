@@ -3,8 +3,9 @@
 DichotomySelectorComponent = Ember.Component.extend
   #. PASSED PROPERTIES
   #. currentType
-  #. PRIVATE PROPERTIES
   #. isGeneral
+  #. isOther
+  #. PRIVATE PROPERTIES
   #. eiValue
   #. nsValue
   #. tfValue

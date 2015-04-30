@@ -1,36 +1,60 @@
-.groups
-  .group.card
-    ul.no-bullet
-      h3.centered Quadra
-      li class=isAlpha:active alpha Ne Ti Fe Si valued (functions 1,2,5,6)
-      li class=isBeta:active beta  Ni Te Fi Se valued (functions 1,2,5,6)
-      li class=isGamma:active gamma Ni Te Fi Se valued (functions 1,2,5,6)
-      li class=isDelta:active delta Ne Ti Fe Si valued (functions 1,2,5,6)
+.flex-row-nowrap
+  .groups
+    .group.card
+      ul.no-bullet
+        h3.centered Quadra
+        li class=isAlpha:active alpha
+        li class=isBeta:active beta
+        li class=isGamma:active gamma
+        li class=isDelta:active delta
 
-  .group.card
-    ul.no-bullet
-      h3.centered Club
-      li class=isResearchers:active researchers NT
-      li class=isPragmatists:active pragmatists ST
-      li class=isHumanitarians:active humanitarians NF
-      li class=isSocials:active socials SF
+    .group.card
+      ul.no-bullet
+        h3.centered Club
+        li class=isResearchers:active researchers
+        li class=isPragmatists:active pragmatists
+        li class=isHumanitarians:active humanitarians
+        li class=isSocials:active socials
 
-  .group.card
-    ul.no-bullet
-      h3.centered Temperament
-      li class=isFM:active flexible-maneurvering EP
-      li class=isLA:active linear-assertive EJ
-      li class=isRA:active receptive-adaptive IP
-      li class=isBS:active balanced-stable IJ
+    .group.card
+      ul.no-bullet
+        h3.centered Temperament
+        li class=isFM:active flexible-maneurvering
+        li class=isLA:active linear-assertive
+        li class=isRA:active receptive-adaptive
+        li class=isBS:active balanced-stable
 
-  .group.card
-    ul.no-bullet
-      h3.centered Romance Style
-      li class=isInfantile:active infantile Ne in ego block
-      li class=isCaregiver:active caregiver Si in ego block
-      li class=isVictim:active victim Ni in ego block
-      li class=isAggressor:active aggressor Se in ego block
-      
+    .group.card
+      ul.no-bullet
+        h3.centered Romance Style
+        li class=isInfantile:active infantile
+        li class=isCaregiver:active caregiver
+        li class=isVictim:active victim
+        li class=isAggressor:active aggressor
 
+  .groups
+    .group-info.card
+      .group-cause Ne Ti Fe Si valued (functions 1,2,5,6)
+      .group-cause Ni Te Fi Se valued (functions 1,2,5,6)
+      .group-cause Ni Te Fi Se valued (functions 1,2,5,6)
+      .group-cause Ne Ti Fe Si valued (functions 1,2,5,6)
+
+    .group-info.card
+      .group-cause NT
+      .group-cause ST
+      .group-cause NF
+      .group-cause SF
+
+    .group-info.card
+      .group-cause EP
+      .group-cause EJ
+      .group-cause IP
+      .group-cause IJ
+
+    .group-info.card
+       .group-cause Ne in ego block
+       .group-cause Si in ego block
+       .group-cause Ni in ego block
+       .group-cause Se in ego block
 
 = outlet

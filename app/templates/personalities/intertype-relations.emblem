@@ -1,30 +1,29 @@
 = outlet "relation"
 
+div
+  
+  | 's
+  '
+  /= model.modelRelationship.relation
+  '
+  | is 
 
-= unless isGeneral
-
-  div
-    
-    | 's
-    '
-    /= model.modelRelationship.relation
-    '
-    | is 
-
-  .flex-row-nowrap
-    .ir-compare
-      .ir-block
-        div
-          | Current Type
+.flex-row-nowrap
+  .ir-compare
+    .ir-block
+      div
+        | Current Type
+      = unless isGeneral
         dichotomy-selector currentType=activeType setNewType="setActiveType"
-        function-ordering currentPersonality=model.modelActive
+      function-ordering currentPersonality=model.modelActive isGeneral=isGeneral
 
-    .ir-compare
-      .ir-block
-        div
-          | Other Type
-        dichotomy-selector currentType=otherType setNewType="setOtherType"
-        function-ordering currentPersonality=model.modelOther
+  .ir-compare
+    .ir-block
+      div
+        | Other Type
+      = unless isGeneral
+        dichotomy-selector currentType=otherType setNewType="setOtherType" isOther=true
+      function-ordering currentPersonality=model.modelOther isGeneral=isGeneral isOther=true
 
 
 div

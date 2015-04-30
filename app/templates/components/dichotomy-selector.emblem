@@ -1,8 +1,8 @@
-.dichotomy-button click="toggleEI"
+.dichotomy-button class=isOther:other click="toggleEI"
   = eiValueFiltered
-.dichotomy-button click="toggleNS"
+.dichotomy-button class=isOther:other click="toggleNS"
   = nsValueFiltered
-.dichotomy-button click="toggleTF"
+.dichotomy-button class=isOther:other click="toggleTF"
   = tfValueFiltered
-.dichotomy-button click="togglePJ"
+.dichotomy-button class=isOther:other click="togglePJ"
   = pjValue

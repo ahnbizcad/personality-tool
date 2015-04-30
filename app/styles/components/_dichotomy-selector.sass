@@ -13,13 +13,14 @@
 
   &.general
     .dichotomy-button
-      background-color: $disabledGrey
-
       border-top: 2px solid $classyGrey
       border-left: 2px solid $classyGrey
       border-bottom: 2px solid $classyGrey - $four
       border-right: 2px solid $classyGrey - $four
       
+      background-color: $disabledGrey
+
+
   .dichotomy-button
     flex: 1 1 0
 
@@ -43,3 +44,10 @@
     &:hover
       background-color: $magneticDrop + $two
       color: $magneticDrop
+
+    &.other
+      background-color: $strangerDanger
+
+      &:hover
+        background-color: $strangerDanger + $two
+        color: $strangerDanger

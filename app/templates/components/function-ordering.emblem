@@ -1,68 +1,62 @@
-= if isGeneral
-
-  .function
+.function class=isOther:active
+  = if isGeneral
     | Leading
-  .function-spacer
-
-  .function-spacer
-  .function
-    | Creative
-  
-  .function-spacer
-  .function
-    | Role
-  
-  .function
-    | Vulnerable
-  .function-spacer
-
-  .function-spacer
-  .function
-    | Suggestive
-  
-  .function
-    | Mobilizing
-  .function-spacer
-
-  .function
-    | Ignoring
-  .function-spacer
-
-  .function-spacer
-  .function
-    | Demonstrative
-
-= else
-
-  .function
+  = else
     = currentPersonality.function1
-  .function-spacer
 
-  .function-spacer
-  .function
+.function-spacer
+
+.function-spacer
+.function class=isOther:active
+  = if isGeneral
+    | Creative
+  = else
     = currentPersonality.function2
 
-  .function-spacer
-  .function
+.function-spacer
+
+.function
+  = if isGeneral
+    | Role
+  = else
     = currentPersonality.function3
 
-  .function
+.function
+  = if isGeneral
+    | Vulnerable
+  = else
     = currentPersonality.function4
-  .function-spacer
 
-  .function-spacer
-  .function
+.function-spacer
+
+.function-spacer
+
+.function
+  = if isGeneral
+    | Suggestive
+  = else
     = currentPersonality.function5
-  
-  .function
+
+.function
+  = if isGeneral
+    | Mobilizing
+  = else
     = currentPersonality.function6
-  .function-spacer
 
-  .function
+.function-spacer
+
+.function
+  = if isGeneral
+    | Ignoring
+  = else
     = currentPersonality.function7
-  .function-spacer
 
-  .function-spacer
-  .function
+.function-spacer
+
+.function-spacer
+
+.function
+  = if isGeneral
+    | Demonstrative
+  = else
     = currentPersonality.function8
-
