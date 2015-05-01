@@ -2,51 +2,28 @@ table#relations-chart
   tr
     th 
 
-    th ENTp
-    th ISFp
-    th ESFj
-    th INTj
+    th.other ENTp
+    th.other ISFp
+    th.other ESFj
+    th.other INTj
 
-    th ENFj
-    th ISTj
-    th ESTp
-    th INFp
+    th.other ENFj
+    th.other ISTj
+    th.other ESTp
+    th.other INFp
 
-    th ESFp
-    th INTp
-    th ENTj
-    th ISFj
+    th.other ESFp
+    th.other INTp
+    th.other ENTj
+    th.other ISFj
 
-    th ESTj
-    th INFj
-    th ENFp
-    th ISTp
-
-  tr
-    td ENTp
-
-    td
-    td
-    td
-    td
-
-    td
-    td
-    td
-    td
-
-    td
-    td
-    td
-    td
-
-    td
-    td
-    td
-    td
+    th.other ESTj
+    th.other INFj
+    th.other ENFp
+    th.other ISTp
 
   tr
-    td ISFp
+    td.main ENTp
 
     td
     td
@@ -69,7 +46,7 @@ table#relations-chart
     td
 
   tr
-    td ESFj
+    td.main ISFp
 
     td
     td
@@ -92,7 +69,7 @@ table#relations-chart
     td
 
   tr
-    td INTj
+    td.main ESFj
 
     td
     td
@@ -115,7 +92,7 @@ table#relations-chart
     td
 
   tr
-    td ENFj
+    td.main INTj
 
     td
     td
@@ -138,7 +115,7 @@ table#relations-chart
     td
 
   tr
-    td ISTj
+    td.main ENFj
 
     td
     td
@@ -161,7 +138,7 @@ table#relations-chart
     td
 
   tr
-    td ESTp
+    td.main ISTj
 
     td
     td
@@ -184,7 +161,7 @@ table#relations-chart
     td
 
   tr
-    td INFp
+    td.main ESTp
 
     td
     td
@@ -207,7 +184,7 @@ table#relations-chart
     td
 
   tr
-    td ESFp
+    td.main INFp
 
     td
     td
@@ -230,7 +207,7 @@ table#relations-chart
     td
 
   tr
-    td INTp
+    td.main ESFp
 
     td
     td
@@ -253,7 +230,7 @@ table#relations-chart
     td
 
   tr
-    td ENTj
+    td.main INTp
 
     td
     td
@@ -276,7 +253,7 @@ table#relations-chart
     td
 
   tr
-    td ISFj
+    td.main ENTj
 
     td
     td
@@ -299,7 +276,7 @@ table#relations-chart
     td
 
   tr
-    td ESTj
+    td.main ISFj
 
     td
     td
@@ -322,7 +299,7 @@ table#relations-chart
     td
 
   tr
-    td INFj
+    td.main ESTj
 
     td
     td
@@ -345,7 +322,7 @@ table#relations-chart
     td
 
   tr
-    td ENFp
+    td.main INFj
 
     td
     td
@@ -368,7 +345,30 @@ table#relations-chart
     td
 
   tr
-    td ISTp
+    td.main ENFp
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+    td
+    td
+    td
+    td
+
+  tr
+    td.main ISTp
 
     td
     td

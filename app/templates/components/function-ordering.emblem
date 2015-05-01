@@ -7,6 +7,7 @@
 .function-spacer
 
 .function-spacer
+
 .function class=isOther:active
   = if isGeneral
     | Creative

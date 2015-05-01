@@ -1,3 +1,11 @@
+div
+  .no-bullet
+    = each ir in model.modelIntertypeRelations
+      /li
+      link-to 'personalities.intertype-relations.relation' ir.relation 
+        = ir.relation
+      |  
+
 = outlet "relation"
 
 div
@@ -12,7 +20,7 @@ div
   .ir-compare
     .ir-block
       div
-        | Current Type
+        | Your Type
       = unless isGeneral
         dichotomy-selector currentType=activeType setNewType="setActiveType"
       function-ordering currentPersonality=model.modelActive isGeneral=isGeneral
@@ -26,12 +34,6 @@ div
       function-ordering currentPersonality=model.modelOther isGeneral=isGeneral isOther=true
 
 
-div
-  ul.no-bullet
-    = each ir in model.modelIntertypeRelations
-      li
-        link-to 'personalities.intertype-relations.relation' ir.relation 
-          = ir.relation
 
 
 relations-chart currentPersonality=model.modelActive otherPersonality=model.modelOther
