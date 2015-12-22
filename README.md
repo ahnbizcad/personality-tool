@@ -1,16 +1,7 @@
 # Personality-tool
 
-A user-friendly tool to browse and socionics personality theory.
-Plug in a specific personality type on every explanation page.
-
-* [personality-tool](http://personality-tool.divshot.io)
-
-
-## Issues, In-progress
-
-* settings and configuration for heroku hosting
-* set model on nested route, when model is already set & using link-to or transitionToRoute.
-* each link handles query params individually, or should they reference the parent-most route's property determined by query params?
+This README outlines the details of collaborating on this Ember application.
+A short introduction of this app could easily go here.
 
 ## Prerequisites
 
