@@ -8,9 +8,10 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "ember server",
+    "start": "ember s --environment production --port=${PORT}",
     "build": "ember build",
-    "test": "ember test"
+    "test": "ember test",
+    "postinstall": "bower install"
   },
   "repository": "",
   "engines": {
